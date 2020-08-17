@@ -4,6 +4,12 @@ pageClass: routes
 
 # Social Media
 
+## CuriousCat
+
+### User
+
+<RouteEn author="lucasew" path="/curiouscat/user/:name" example="/curiouscat/user/username" :paramsDesc="['name, username that is in the URL']" />
+
 ## Disqus
 
 ### Comment
@@ -40,7 +46,7 @@ These feed do not include boosts (a.k.a. reblogs). RSSHub provides a feed for us
 
 ### User timeline
 
-<RouteEn author="notofoe" example="/mastodon/acct/CatWhitney@mastodon.social" path="/mastodon/acct/:acct/:only_media?" :paramsDesc="['Webfinger account URI', 'whether only display media content, default to false, any value to true']"/>
+<RouteEn author="notofoe" example="/mastodon/acct/CatWhitney@mastodon.social/statuses" path="/mastodon/acct/:acct/statuses/:only_media?" :paramsDesc="['Webfinger account URI', 'whether only display media content, default to false, any value to true']"/>
 
 ### Timeline
 
