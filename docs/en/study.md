@@ -24,7 +24,7 @@ pageClass: routes
 
 ### Daily English Sentence
 
-<Route author="mashirozx" example="/iciba/7/poster" path="/iciba/:days?/:img_type?" :paramsDesc="['number of items to show（min = 1, max = 7, default = 1）', 'image style']">
+<RouteEn author="mashirozx" example="/iciba/7/poster" path="/iciba/:days?/:img_type?" :paramsDesc="['number of items to show (min = 1, max = 7, default = 1)', 'image style']">
 
 | `:img_type` | image style    |
 | ----------- | -------------- |
@@ -33,13 +33,13 @@ pageClass: routes
 | thumbnail   | Thumbnail size |
 | poster      | Art poster     |
 
-</Route>
+</RouteEn>
 
 ## LinkResearch
 
 ### theses
 
-<RouteEn author="yech1990" example="/linkresearcher/category=theses&subject=生物" path="/linkresearcher/theses/:param" :paramsDesc="['key=value，eg. subject=生物']"/>
+<RouteEn author="yech1990" example="/linkresearcher/category=theses&subject=生物" path="/linkresearcher/theses/:param" supportScihub="1" :paramsDesc="['key=value，eg. subject=生物']">
 
 | `:param` | example         | definition                             |
 | -------- | --------------- | -------------------------------------- |
@@ -48,17 +48,37 @@ pageClass: routes
 | columns  | columns=健康    | string / undefined                     |
 | columns  | columns=virus   | string / undefined                     |
 
+</RouteEn>
+
+## ORCID
+
+### Works List
+
+<RouteEn author="OrangeEd1t" example="/orcid/0000-0002-4731-9700" path="/orcid/:id" :paramsDesc="['Open Researcher and Contributor ID']"/>
+
 ## X-MOL
 
 ### News
 
 <RouteEn author="cssxsh" example="/x-mol/news/3" path="/x-mol/news/:tag?" :paramsDesc="['数字编号，可从新闻列表URL得到。为空时从新闻主页获取新闻。']" />
 
+## XMind
+
+### Mindmap Gallery
+
+<RouteEn author="nczitzk" example="/xmind/mindmap" path="/xmind/mindmap/:lang?" :paramsDesc="['language code, all languages by default']">
+
+| English | Español | Deutsch | Français | 中文 | 日本語 |
+| ------- | ------- | ------- | -------- | ---- | ------ |
+| en      | es      | de      | fr       | zh   | jp     |
+
+</RouteEn>
+
 ## ZhiShiFenZi
 
 ### News
 
-<RouteEn author="yech1990" example="/zhishifenzi/news/ai" path="/zhishifenzi/news/:type" :paramsDesc="['type，eg. ai']"/>
+<RouteEn author="yech1990" example="/zhishifenzi/news/ai" path="/zhishifenzi/news/:type" :paramsDesc="['type，eg. ai']">
 
 | `:type`   | type name |
 | --------- | --------- |
@@ -72,13 +92,15 @@ pageClass: routes
 
 > leave it blank（`/zhishifenzi/news`）to get all
 
+</RouteEn>
+
 ### depth
 
 <RouteEn author="yech1990" example="/zhishifenzi/depth" path="/zhishifenzi/depth" />
 
 ### innovation
 
-<RouteEn author="yech1990" example="/zhishifenzi/innovation/company" path="/zhishifenzi/innovation/:type" :paramsDesc="['type，eg. company']"/>
+<RouteEn author="yech1990" example="/zhishifenzi/innovation/company" path="/zhishifenzi/innovation/:type" :paramsDesc="['type，eg. company']">
 
 | `:type`       | type name     |
 | ------------- | ------------- |
@@ -90,3 +112,5 @@ pageClass: routes
 | policy        | Policy        |
 
 > leave it blank（`/zhishifenzi/innovation`）to get all
+
+</RouteEn>
