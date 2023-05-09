@@ -5632,15 +5632,15 @@ eslint-plugin-prettier@4.2.1:
   dependencies:
     prettier-linter-helpers "^1.0.0"
 
-eslint-plugin-yml@1.4.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-yml/-/eslint-plugin-yml-1.4.0.tgz#703eda879b10be0555ff25c5b8f1cf73506e30de"
-  integrity sha512-vzggXNfPKa+arIaNUGoC3DPRZCxNty+xD/v9xOcE5D3Bj9SbgIrEobqVB35I8QxHd2YjL/dOS0xIIFmjAalwbw==
+eslint-plugin-yml@1.7.0:
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-yml/-/eslint-plugin-yml-1.7.0.tgz#cda4ba4b706baeff5316ebc1cc2242e2b97f859a"
+  integrity sha512-qq61FQJk+qIgWl0R06bec7UQQEIBrUH22jS+MroTbFUKu+3/iVlGRpZd8mjpOAm/+H/WEDFwy4x/+kKgVGbsWw==
   dependencies:
     debug "^4.3.2"
     lodash "^4.17.21"
     natural-compare "^1.4.0"
-    yaml-eslint-parser "^1.1.0"
+    yaml-eslint-parser "^1.2.1"
 
 eslint-scope@^4.0.3:
   version "4.0.3"
@@ -14684,10 +14684,10 @@ yallist@^4.0.0:
   resolved "https://registry.yarnpkg.com/yallist/-/yallist-4.0.0.tgz#9bb92790d9c0effec63be73519e11a35019a3a72"
   integrity sha512-3wdGidZyq5PB084XLES5TpOSRA3wjXAlIWMhum2kRcv/41Sn2emQ0dycQW4uZXLejwKvg6EsvbdlVL+FYEct7A==
 
-yaml-eslint-parser@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/yaml-eslint-parser/-/yaml-eslint-parser-1.1.0.tgz#62703e2f4afbe5a17d3fe297882740bf89504e78"
-  integrity sha512-b464Q1fYiX1oYx2kE8k4mEp6S9Prk+tfDsY/IPxQ0FCjEuj3AKko5Skf3/yQJeYTTDyjDE+aWIJemnv29HvEWQ==
+yaml-eslint-parser@^1.2.1:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/yaml-eslint-parser/-/yaml-eslint-parser-1.2.2.tgz#1a9673ebe254328cfc2fa99f297f6d8c9364ccd8"
+  integrity sha512-pEwzfsKbTrB8G3xc/sN7aw1v6A6c/pKxLAkjclnAyo5g5qOh6eL9WGu0o3cSDQZKrTNk4KL4lQSwZW+nBkANEg==
   dependencies:
     eslint-visitor-keys "^3.0.0"
     lodash "^4.17.21"
