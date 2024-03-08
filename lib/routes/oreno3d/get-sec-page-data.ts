@@ -1,4 +1,3 @@
-// @ts-nocheck
 import got from '@/utils/got';
 import { load } from 'cheerio';
 
@@ -73,4 +72,4 @@ async function sync_detail(link) {
     };
 }
 
-module.exports = sync_detail;
+export default sync_detail;

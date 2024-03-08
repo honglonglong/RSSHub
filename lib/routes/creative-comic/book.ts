@@ -1,4 +1,3 @@
-// @ts-nocheck
 import { getCurrentPath } from '@/utils/helpers';
 const __dirname = getCurrentPath(import.meta.url);
 
@@ -6,7 +5,7 @@ import cache from '@/utils/cache';
 import { parseDate } from '@/utils/parse-date';
 import { art } from '@/utils/render';
 import * as path from 'node:path';
-const { getUuid, getBook, getChapter, getChapters, getImgEncrypted, getImgKey, decrypt, getRealKey, siteHost } = require('./utils');
+import { getUuid, getBook, getChapter, getChapters, getImgEncrypted, getImgKey, decrypt, getRealKey, siteHost } from './utils';
 
 export default async (ctx) => {
     const { id, coverOnly = 'true', quality = '1' } = ctx.req.param();

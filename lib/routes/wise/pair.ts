@@ -1,12 +1,11 @@
-// @ts-nocheck
 import { getCurrentPath } from '@/utils/helpers';
 const __dirname = getCurrentPath(import.meta.url);
 
 import cache from '@/utils/cache';
 import got from '@/utils/got';
 import { parseDate } from '@/utils/parse-date';
-const dayjs = require('dayjs');
-const customParseFormat = require('dayjs/plugin/customParseFormat');
+import dayjs from 'dayjs';
+import customParseFormat from 'dayjs/plugin/customParseFormat';
 dayjs.extend(customParseFormat);
 import { art } from '@/utils/render';
 import * as path from 'node:path';

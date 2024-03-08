@@ -1,9 +1,8 @@
-// @ts-nocheck
 import cache from '@/utils/cache';
 import got from '@/utils/got';
 import { load } from 'cheerio';
 import { parseDate } from '@/utils/parse-date';
-const { parseItem } = require('./utils');
+import { parseItem } from './utils';
 
 export default async (ctx) => {
     const id = ctx.req.param('id');

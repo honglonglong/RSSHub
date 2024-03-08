@@ -1,8 +1,7 @@
-// @ts-nocheck
 import cache from '@/utils/cache';
 import got from '@/utils/got';
 
-const { rootUrl, getData, processItems } = require('./util');
+import { rootUrl, getData, processItems } from './util';
 
 export default async (ctx) => {
     const { category = 'all' } = ctx.req.param();

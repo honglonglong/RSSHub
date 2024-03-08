@@ -1,8 +1,7 @@
-// @ts-nocheck
 import { getCurrentPath } from '@/utils/helpers';
 const __dirname = getCurrentPath(import.meta.url);
 
-const { google } = require('googleapis');
+import { google } from 'googleapis';
 const { OAuth2 } = google.auth;
 import { art } from '@/utils/render';
 import * as path from 'node:path';
@@ -156,4 +155,4 @@ const youtubeUtils = {
         }),
 };
 
-module.exports = youtubeUtils;
+export default youtubeUtils;

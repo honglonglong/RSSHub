@@ -1,8 +1,7 @@
-// @ts-nocheck
 import { load } from 'cheerio';
 import { parseDate } from '@/utils/parse-date';
 import timezone from '@/utils/timezone';
-const { getContent } = require('./utils');
+import { getContent } from './utils';
 
 const host = 'https://gs.njust.edu.cn';
 

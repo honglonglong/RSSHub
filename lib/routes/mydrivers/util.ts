@@ -1,4 +1,3 @@
-// @ts-nocheck
 import got from '@/utils/got';
 import { load } from 'cheerio';
 import timezone from '@/utils/timezone';
@@ -114,13 +113,4 @@ const processItems = async (items, tryGet) =>
         )
     );
 
-module.exports = {
-    rootUrl,
-    rootRSSUrl,
-    title,
-    categories,
-
-    convertToQueryString,
-    getInfo,
-    processItems,
-};
+export { rootUrl, rootRSSUrl, title, categories, convertToQueryString, getInfo, processItems };

@@ -1,4 +1,3 @@
-// @ts-nocheck
 import cache from '@/utils/cache';
 import got from '@/utils/got';
 
@@ -10,7 +9,7 @@ const ProcessNewCookie = (oldCookie, newCookie) => {
     return [...oldCookieArray, ...newCookieArray].join('; ');
 };
 
-module.exports = {
+export default {
     getCookie: () => {
         const key = 'zhihu-xhu-cookie';
         return cache.tryGet(key, async () => {

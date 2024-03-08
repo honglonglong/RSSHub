@@ -1,4 +1,3 @@
-// @ts-nocheck
 import got from '@/utils/got';
 import { load } from 'cheerio';
 import { parseDate } from '@/utils/parse-date';
@@ -31,8 +30,4 @@ const getArticle = (item, tryGet) =>
         return item;
     });
 
-module.exports = {
-    baseUrl,
-    getSingleRecord,
-    getArticle,
-};
+export { baseUrl, getSingleRecord, getArticle };

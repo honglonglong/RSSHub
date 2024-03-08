@@ -1,11 +1,10 @@
-// @ts-nocheck
 import cache from '@/utils/cache';
 import got from '@/utils/got';
 import { load } from 'cheerio';
 import { parseDate } from '@/utils/parse-date';
 import MarkdownIt from 'markdown-it';
 const md = MarkdownIt();
-const asyncPool = require('tiny-async-pool');
+import asyncPool from 'tiny-async-pool';
 
 const baseUrl = 'https://www.luogu.com.cn';
 

@@ -1,4 +1,3 @@
-// @ts-nocheck
 import { getCurrentPath } from '@/utils/helpers';
 const __dirname = getCurrentPath(import.meta.url);
 
@@ -8,7 +7,7 @@ import { load } from 'cheerio';
 import { parseDate } from '@/utils/parse-date';
 import * as path from 'node:path';
 
-const { rootUrl, apiTopicUrl, art, processItems } = require('./util');
+import { rootUrl, apiTopicUrl, art, processItems } from './util';
 
 export default async (ctx) => {
     const { category = '' } = ctx.req.param();

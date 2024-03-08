@@ -1,4 +1,3 @@
-// @ts-nocheck
 const queries = {
     stream: {
         query: `query UserStreamQuery(
@@ -1524,6 +1523,4 @@ const queries = {
     },
 };
 
-module.exports = {
-    queries,
-};
+export { queries };

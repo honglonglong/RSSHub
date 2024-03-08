@@ -1,8 +1,7 @@
-// @ts-nocheck
 import cache from '@/utils/cache';
 import got from '@/utils/got';
 import { parseDate } from '@/utils/parse-date';
-const { phoneBaseUrl, webBaseUrl, generateNonce, sign, getPost } = require('./utils');
+import { phoneBaseUrl, webBaseUrl, generateNonce, sign, getPost } from './utils';
 import { config } from '@/config';
 
 export default async (ctx) => {

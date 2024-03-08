@@ -1,4 +1,3 @@
-// @ts-nocheck
 import got from '@/utils/got';
 
 const getTokenAndSecret = (tryGet) =>
@@ -15,6 +14,4 @@ const getTokenAndSecret = (tryGet) =>
         return { token, secret };
     });
 
-module.exports = {
-    getTokenAndSecret,
-};
+export { getTokenAndSecret };

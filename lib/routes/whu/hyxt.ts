@@ -1,10 +1,9 @@
-// @ts-nocheck
 import cache from '@/utils/cache';
 import got from '@/utils/got';
 import { load } from 'cheerio';
 import { parseDate } from '@/utils/parse-date';
 
-const { domain, processMeta, getMeta, processItems } = require('./util');
+import { domain, processMeta, getMeta, processItems } from './util';
 
 export default async (ctx) => {
     const { category = 'tzgg' } = ctx.req.param();

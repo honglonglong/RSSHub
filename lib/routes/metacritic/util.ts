@@ -1,4 +1,3 @@
-// @ts-nocheck
 const sorts = {
     metascore: {
         id: 'metaScore',
@@ -37,7 +36,4 @@ const types = {
     },
 };
 
-module.exports = {
-    sorts,
-    types,
-};
+export { sorts, types };

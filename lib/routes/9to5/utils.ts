@@ -1,4 +1,3 @@
-// @ts-nocheck
 import { load } from 'cheerio';
 
 const ProcessFeed = (data) => {
@@ -32,6 +31,4 @@ const ProcessFeed = (data) => {
     return content.html();
 };
 
-module.exports = {
-    ProcessFeed,
-};
+export default { ProcessFeed };

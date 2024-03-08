@@ -1,6 +1,5 @@
-// @ts-nocheck
 import cache from '@/utils/cache';
-const { joinUrl } = require('./utils');
+import { joinUrl } from './utils';
 import { parseDate } from '@/utils/parse-date';
 import { load } from 'cheerio';
 import got from '@/utils/got';

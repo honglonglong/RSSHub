@@ -1,6 +1,5 @@
-// @ts-nocheck
 import got from '@/utils/got';
-const { JSDOM } = require('jsdom');
+import { JSDOM } from 'jsdom';
 
 export default async (ctx) => {
     const data = await got.get(`https://www.hotukdeals.com/`, {

@@ -1,4 +1,3 @@
-// @ts-nocheck
 import { config } from '@/config';
 
 function getConfig(ctx) {
@@ -8,6 +7,4 @@ function getConfig(ctx) {
     return config.discourse.config[ctx.req.param('configId')];
 }
 
-module.exports = {
-    getConfig,
-};
+export { getConfig };

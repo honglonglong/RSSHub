@@ -1,4 +1,3 @@
-// @ts-nocheck
 import { getCurrentPath } from '@/utils/helpers';
 const __dirname = getCurrentPath(import.meta.url);
 
@@ -18,7 +17,7 @@ const typeMap = {
 // Number of get articles
 let limit = 10;
 
-module.exports = async (ctx, type) => {
+export default async (ctx, type) => {
     const link = typeMap[type].url;
     const title = typeMap[type].title;
 

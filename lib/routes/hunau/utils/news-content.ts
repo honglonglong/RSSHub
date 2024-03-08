@@ -1,4 +1,3 @@
-// @ts-nocheck
 import got from '@/utils/got';
 import { parseDate } from '@/utils/parse-date';
 import timezone from '@/utils/timezone';
@@ -45,4 +44,4 @@ async function newsContent(link, department = '') {
     }
 }
 
-module.exports = newsContent;
+export default newsContent;

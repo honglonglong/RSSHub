@@ -1,8 +1,7 @@
-// @ts-nocheck
 import got from '@/utils/got';
 import { load } from 'cheerio';
 import { isValidHost } from '@/utils/valid-host';
-const { headers, parseItems } = require('./utils');
+import { headers, parseItems } from './utils';
 
 export default async (ctx) => {
     const { language = 'www', username, sort = '' } = ctx.req.param();

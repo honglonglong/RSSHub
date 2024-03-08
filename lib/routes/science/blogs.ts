@@ -1,8 +1,7 @@
-// @ts-nocheck
 import cache from '@/utils/cache';
 import { load } from 'cheerio';
 import { parseDate } from '@/utils/parse-date';
-const { baseUrl } = require('./utils');
+import { baseUrl } from './utils';
 import { config } from '@/config';
 import puppeteer from '@/utils/puppeteer';
 

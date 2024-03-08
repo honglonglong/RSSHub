@@ -1,10 +1,9 @@
-// @ts-nocheck
 import cache from '@/utils/cache';
 import { load } from 'cheerio';
 import { parseDate } from '@/utils/parse-date';
-const { getElementChildrenInnerText } = require('./utils');
-const dayjs = require('dayjs');
-const utc = require('dayjs/plugin/utc');
+import { getElementChildrenInnerText } from './utils';
+import dayjs from 'dayjs';
+import utc from 'dayjs/plugin/utc';
 dayjs.extend(utc);
 
 import got from '@/utils/got';

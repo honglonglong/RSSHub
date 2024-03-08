@@ -1,6 +1,5 @@
-// @ts-nocheck
 import got from '@/utils/got';
-const cache = require('./cache');
+import cache from './cache';
 import { config } from '@/config';
 
 export default async (ctx) => {
@@ -11,7 +10,7 @@ export default async (ctx) => {
     }
 
     const uid = ctx.req.param('uid');
-    const name = await cache.getUsernameFromUID(ctx, uid);
+    const name = await cache.getUsernameFromUID(uid);
 
     const countResponse = await got({
         method: 'get',

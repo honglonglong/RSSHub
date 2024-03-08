@@ -1,4 +1,3 @@
-// @ts-nocheck
 import { getCurrentPath } from '@/utils/helpers';
 const __dirname = getCurrentPath(import.meta.url);
 
@@ -87,8 +86,4 @@ const renderDesc = (desc) => {
     return desc.replaceAll('\n', '<br>');
 };
 
-module.exports = {
-    baseUrl,
-    getBoards,
-    renderDesc,
-};
+export { baseUrl, getBoards, renderDesc };

@@ -1,4 +1,3 @@
-// @ts-nocheck
 import cache from '@/utils/cache';
 import got from '@/utils/got';
 import { load } from 'cheerio';
@@ -81,6 +80,4 @@ const getData = async (ctx, url, title, description) => {
     };
 };
 
-module.exports = {
-    getData,
-};
+export default { getData };

@@ -1,8 +1,7 @@
-// @ts-nocheck
 import cache from '@/utils/cache';
 import got from '@/utils/got';
 import { load } from 'cheerio';
-const { baseUrl, cookieJar } = require('./utils');
+import { baseUrl, cookieJar } from './utils';
 
 export default async (ctx) => {
     const response = await got(`${baseUrl}/siteindex`, { cookieJar });

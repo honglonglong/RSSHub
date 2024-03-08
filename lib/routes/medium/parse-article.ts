@@ -1,4 +1,3 @@
-// @ts-nocheck
 import cache from '@/utils/cache';
 import got from '@/utils/got';
 import { load } from 'cheerio';
@@ -47,7 +46,7 @@ async function parse(url, cookie = '') {
     };
 }
 
-module.exports = function (ctx, url) {
+export default function (ctx, url) {
     return cache.tryGet(`medium:article:${url}`, async () => {
         const { title, author, publishedTime, html } = await parse(url, config.medium.articleCookie);
 
@@ -59,4 +58,4 @@ module.exports = function (ctx, url) {
             pubDate: publishedTime,
         };
     });
-};
+}

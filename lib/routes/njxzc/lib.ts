@@ -1,5 +1,4 @@
-// @ts-nocheck
-const { getNoticeList } = require('./utils');
+import { getNoticeList } from './utils';
 
 const url = 'https://lib.njxzc.edu.cn/pxyhd/list.htm';
 const host = 'https://lib.njxzc.edu.cn';

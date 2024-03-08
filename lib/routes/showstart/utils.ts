@@ -1,4 +1,3 @@
-// @ts-nocheck
 import got from '@/utils/got';
 import md5 from '@/utils/md5';
 
@@ -84,10 +83,4 @@ function uniqBy(items, key) {
     });
 }
 
-module.exports = {
-    post,
-    getAccessToken,
-    uuid,
-    sortBy,
-    uniqBy,
-};
+export { post, getAccessToken, uuid, sortBy, uniqBy };

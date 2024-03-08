@@ -1,4 +1,3 @@
-// @ts-nocheck
 import cache from '@/utils/cache';
 import got from '@/utils/got';
 import { load } from 'cheerio';
@@ -45,6 +44,4 @@ async function getNoticeList(ctx, url, host, titleSelector, dateSelector, conten
     return out;
 }
 
-module.exports = {
-    getNoticeList,
-};
+export { getNoticeList };

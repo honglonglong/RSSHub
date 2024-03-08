@@ -1,4 +1,3 @@
-// @ts-nocheck
 import got from '@/utils/got';
 import { load } from 'cheerio';
 import { parseDate } from '@/utils/parse-date';
@@ -74,12 +73,4 @@ const parseReviews = async ($, item) => {
     item.description = content.html();
 };
 
-module.exports = {
-    baseUrl,
-    headers,
-    fixImages,
-    hdImage,
-    parseReviews,
-    removeFigureStyle,
-    removeResponsiveStyle,
-};
+export { baseUrl, headers, fixImages, hdImage, parseReviews, removeFigureStyle, removeResponsiveStyle };

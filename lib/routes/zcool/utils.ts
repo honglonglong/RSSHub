@@ -1,4 +1,3 @@
-// @ts-nocheck
 import { getCurrentPath } from '@/utils/helpers';
 const __dirname = getCurrentPath(import.meta.url);
 
@@ -12,7 +11,4 @@ const extractWork = (data) =>
         data: data.props.pageProps.data,
     });
 
-module.exports = {
-    extractArticle,
-    extractWork,
-};
+export { extractArticle, extractWork };

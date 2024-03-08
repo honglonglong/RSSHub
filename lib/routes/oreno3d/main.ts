@@ -1,4 +1,3 @@
-// @ts-nocheck
 import { getCurrentPath } from '@/utils/helpers';
 const __dirname = getCurrentPath(import.meta.url);
 
@@ -7,7 +6,7 @@ import got from '@/utils/got';
 import { art } from '@/utils/render';
 import * as path from 'node:path';
 import { load } from 'cheerio';
-const get_sec_page_data = require('./get-sec-page-data');
+import get_sec_page_data from './get-sec-page-data';
 
 const rootUrl = 'https://oreno3d.com';
 

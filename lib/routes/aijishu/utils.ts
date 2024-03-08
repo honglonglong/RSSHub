@@ -1,4 +1,3 @@
-// @ts-nocheck
 import cache from '@/utils/cache';
 import got from '@/utils/got';
 import { parseRelativeDate, parseDate } from '@/utils/parse-date';
@@ -33,6 +32,4 @@ const parseArticle = (item) => {
     });
 };
 
-module.exports = {
-    parseArticle,
-};
+export default { parseArticle };

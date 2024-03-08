@@ -1,4 +1,3 @@
-// @ts-nocheck
 import { getCurrentPath } from '@/utils/helpers';
 const __dirname = getCurrentPath(import.meta.url);
 
@@ -9,7 +8,7 @@ import { parseDate } from '@/utils/parse-date';
 import { art } from '@/utils/render';
 import * as path from 'node:path';
 
-const { domain, processMeta, getMeta, processItems } = require('./util');
+import { domain, processMeta, getMeta, processItems } from './util';
 
 export default async (ctx) => {
     const { category = 'wdzx/wdyw' } = ctx.req.param();

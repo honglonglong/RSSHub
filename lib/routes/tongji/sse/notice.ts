@@ -1,4 +1,3 @@
-// @ts-nocheck
 import cache from '@/utils/cache';
 // Warning: The author still knows nothing about javascript!
 
@@ -7,7 +6,7 @@ import cache from '@/utils/cache';
 
 import got from '@/utils/got'; // get web content
 import { load } from 'cheerio'; // html parser
-const getArticle = require('./_article');
+import getArticle from './_article';
 import { parseDate } from '@/utils/parse-date';
 
 export default async (ctx) => {

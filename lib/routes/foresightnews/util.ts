@@ -1,4 +1,3 @@
-// @ts-nocheck
 import { getCurrentPath } from '@/utils/helpers';
 const __dirname = getCurrentPath(import.meta.url);
 
@@ -6,7 +5,7 @@ import got from '@/utils/got';
 import { parseDate } from '@/utils/parse-date';
 import { art } from '@/utils/render';
 import * as path from 'node:path';
-const zlib = require('zlib');
+import zlib from 'zlib';
 
 const constants = {
     labelHot: '热门',
@@ -88,12 +87,4 @@ const processItems = async (apiUrl, limit, ...searchParams) => {
     return { items, info };
 };
 
-module.exports = {
-    icon,
-    image,
-    rootUrl,
-    apiRootUrl,
-    imgRootUrl,
-
-    processItems,
-};
+export { icon, image, rootUrl, apiRootUrl, imgRootUrl, processItems };

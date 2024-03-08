@@ -1,4 +1,3 @@
-// @ts-nocheck
 const ProcessFeed = ($) => {
     // by default treat it as a hybrid news with video and story-body__inner
     let content = $('#main-content article');
@@ -33,6 +32,4 @@ const ProcessFeed = ($) => {
     return content.html();
 };
 
-module.exports = {
-    ProcessFeed,
-};
+export default { ProcessFeed };

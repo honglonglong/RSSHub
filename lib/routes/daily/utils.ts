@@ -1,5 +1,4 @@
-// @ts-nocheck
-const dayjs = require('dayjs');
+import dayjs from 'dayjs';
 import got from '@/utils/got';
 
 const getData = async (graphqlQuery) =>
@@ -37,4 +36,4 @@ const getRedirectedLink = (data) =>
         })
     );
 
-module.exports = { getData, getList, getRedirectedLink };
+export { getData, getList, getRedirectedLink };

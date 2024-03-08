@@ -1,4 +1,3 @@
-// @ts-nocheck
 function parseJSONP(jsonpData) {
     try {
         const startPos = jsonpData.indexOf('({');
@@ -15,6 +14,4 @@ function parseJSONP(jsonpData) {
     }
 }
 
-module.exports = {
-    parseJSONP,
-};
+export { parseJSONP };

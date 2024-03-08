@@ -1,7 +1,6 @@
-// @ts-nocheck
 import got from '@/utils/got';
 import { load } from 'cheerio';
-const { asyncPoolAll, parseArticle } = require('./utils');
+import { asyncPoolAll, parseArticle } from './utils';
 const hostMap = {
     'en-us': 'https://www.wsj.com',
     'zh-cn': 'https://cn.wsj.com/zh-hans',

@@ -1,4 +1,3 @@
-// @ts-nocheck
 import { getCurrentPath } from '@/utils/helpers';
 const __dirname = getCurrentPath(import.meta.url);
 
@@ -42,7 +41,7 @@ const fetchAllArticles = (data) => {
     return info;
 };
 
-module.exports = {
+export default {
     BASE: base,
     urlBase,
     fetchAllArticles,

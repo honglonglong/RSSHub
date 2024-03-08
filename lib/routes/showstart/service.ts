@@ -1,6 +1,5 @@
-// @ts-nocheck
-const { HOST } = require('./const');
-const { getAccessToken, post, sortBy, uniqBy } = require('./utils');
+import { HOST } from './const';
+import { getAccessToken, post, sortBy, uniqBy } from './utils';
 
 async function fetchActivityList(
     params = {
@@ -156,13 +155,4 @@ async function fetchDictionary(cityCode, showStyle) {
     };
 }
 
-module.exports = {
-    fetchActivityList,
-    fetchCityList,
-    fetchStyleList,
-    fetchPerformerList,
-    fetchPerformerInfo,
-    fetchBrandList,
-    fetchBrandInfo,
-    fetchDictionary,
-};
+export { fetchActivityList, fetchCityList, fetchStyleList, fetchPerformerList, fetchPerformerInfo, fetchBrandList, fetchBrandInfo, fetchDictionary };

@@ -1,4 +1,3 @@
-// @ts-nocheck
 const getAcwScV2ByArg1 = (arg1) => {
     const pwd = '3000176000856006061501533003690027800375';
     const hexXor = function (box, pwd) {
@@ -30,6 +29,4 @@ const getAcwScV2ByArg1 = (arg1) => {
     return hexXor(box, pwd);
 };
 
-module.exports = {
-    getAcwScV2ByArg1,
-};
+export { getAcwScV2ByArg1 };

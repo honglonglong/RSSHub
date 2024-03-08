@@ -1,8 +1,7 @@
-// @ts-nocheck
 import cache from '@/utils/cache';
 import got from '@/utils/got';
 import { parseDate } from '@/utils/parse-date';
-const { baseUrl, getBoards, renderDesc } = require('./utils');
+import { baseUrl, getBoards, renderDesc } from './utils';
 
 export default async (ctx) => {
     let { board = 'all' } = ctx.req.param();

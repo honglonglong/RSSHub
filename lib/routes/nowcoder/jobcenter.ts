@@ -1,6 +1,5 @@
-// @ts-nocheck
 import cache from '@/utils/cache';
-const url = require('url');
+import * as url from 'node:url';
 import got from '@/utils/got';
 import { load } from 'cheerio';
 

@@ -1,11 +1,10 @@
-// @ts-nocheck
 import got from '@/utils/got';
-const cache = require('./cache');
+import cache from './cache';
 import { config } from '@/config';
 
 export default async (ctx) => {
     const uid = String(ctx.req.param('uid'));
-    const name = await cache.getUsernameFromUID(ctx, uid);
+    const name = await cache.getUsernameFromUID(uid);
 
     const cookie = config.bilibili.cookies[uid];
     if (cookie === undefined) {

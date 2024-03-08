@@ -1,9 +1,8 @@
-// @ts-nocheck
 import cache from '@/utils/cache';
 import got from '@/utils/got';
 import { load } from 'cheerio';
 
-const { rootUrl, getItems, getItemInfo, processItems } = require('./util');
+import { rootUrl, getItems, getItemInfo, processItems } from './util';
 
 export default async (ctx) => {
     const { id = '1', downLinkType = '磁力链' } = ctx.req.param();

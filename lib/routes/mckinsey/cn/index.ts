@@ -1,10 +1,9 @@
-// @ts-nocheck
 // use stock `got` package as a workaround for
 // https://github.com/DIYgod/RSSHub/issues/8239
 // https://github.com/DIYgod/RSSHub/pull/8288
 import got from 'got';
 import { parseDate } from '@/utils/parse-date';
-const { categories } = require('./category-map');
+import { categories } from './category-map';
 
 const baseUrl = 'https://www.mckinsey.com.cn';
 const endpoint = `${baseUrl}/wp-json`;

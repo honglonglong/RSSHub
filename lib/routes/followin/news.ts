@@ -1,7 +1,6 @@
-// @ts-nocheck
 import cache from '@/utils/cache';
 import got from '@/utils/got';
-const { baseUrl, favicon, getBuildId, parseList, parseItem } = require('./utils');
+import { baseUrl, favicon, getBuildId, parseList, parseItem } from './utils';
 
 export default async (ctx) => {
     const { lang = 'en' } = ctx.req.param();

@@ -1,7 +1,6 @@
-// @ts-nocheck
 import { load } from 'cheerio';
 import got from '@/utils/got';
-const LZString = require('lz-string');
+import LZString from 'lz-string';
 import { parseDate } from '@/utils/parse-date';
 
 let baseUrl = '';

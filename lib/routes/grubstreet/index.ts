@@ -1,5 +1,4 @@
-// @ts-nocheck
-const utils = require('./utils');
+import utils from './utils';
 
 export default async (ctx) => {
     const url = `https://www.grubstreet.com/_components/newsfeed/instances/grubstreet-index@published`;

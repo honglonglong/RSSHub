@@ -1,8 +1,7 @@
-// @ts-nocheck
 import cache from '@/utils/cache';
 import got from '@/utils/got';
 import { load } from 'cheerio';
-const utils = require('./utils');
+import utils from './utils';
 
 export default async (ctx) => {
     const { tag, type, option } = ctx.req.param();

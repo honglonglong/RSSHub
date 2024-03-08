@@ -1,4 +1,3 @@
-// @ts-nocheck
 import { getCurrentPath } from '@/utils/helpers';
 const __dirname = getCurrentPath(import.meta.url);
 
@@ -6,7 +5,7 @@ import got from '@/utils/got';
 import { load } from 'cheerio';
 import { parseDate } from '@/utils/parse-date';
 import timezone from '@/utils/timezone';
-const { userUrl, appsUrl } = require('../utils');
+import { userUrl, appsUrl } from '../utils';
 import { art } from '@/utils/render';
 import * as path from 'node:path';
 

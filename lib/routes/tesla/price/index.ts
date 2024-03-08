@@ -1,5 +1,4 @@
-// @ts-nocheck
-const { getTeslaPrice } = require('./get-price');
+import { getTeslaPrice } from './get-price';
 
 export default async (ctx) => {
     const cars = [

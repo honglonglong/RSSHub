@@ -1,4 +1,3 @@
-// @ts-nocheck
 // 排行榜基本数据
 const DATA_MAP = {
     bh2: {
@@ -132,7 +131,4 @@ const RANKING_TYPE_MAP = {
     },
 };
 
-module.exports = {
-    DATA_MAP,
-    RANKING_TYPE_MAP,
-};
+export { DATA_MAP, RANKING_TYPE_MAP };

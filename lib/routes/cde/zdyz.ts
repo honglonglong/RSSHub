@@ -1,9 +1,8 @@
-// @ts-nocheck
 import cache from '@/utils/cache';
 import got from '@/utils/got';
 import { load } from 'cheerio';
 import { parseDate } from '@/utils/parse-date';
-const utils = require('./utils');
+import utils from './utils';
 
 const baseUrl = 'https://www.cde.org.cn';
 const zdyzMap = {

@@ -1,8 +1,7 @@
-// @ts-nocheck
 import { config } from '@/config';
 import logger from '@/utils/logger';
-const got = require('./pixiv-got');
-const { maskHeader } = require('./constants');
+import got from './pixiv-got';
+import { maskHeader } from './constants';
 
 let token = null;
 
@@ -57,9 +56,7 @@ async function getToken(tryGet) {
     return token;
 }
 
-module.exports = {
-    getToken,
-};
+export { getToken };
 
 // let tickTokenStarted = false;
 
@@ -79,7 +76,7 @@ module.exports = {
 //     return token;
 // }
 
-// module.exports = async (tryGet) => {
+// export default async (tryGet) => {
 //     await startTickToken(tryGet);
 //     return waitForToken();
 // };

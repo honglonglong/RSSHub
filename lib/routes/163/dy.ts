@@ -1,9 +1,8 @@
-// @ts-nocheck
 import cache from '@/utils/cache';
 import got from '@/utils/got';
 import { parseDate } from '@/utils/parse-date';
 import timezone from '@/utils/timezone';
-const { parseDyArticle } = require('./utils');
+import { parseDyArticle } from './utils';
 
 export default async (ctx) => {
     const id = ctx.req.param('id');

@@ -1,7 +1,6 @@
-// @ts-nocheck
 import got from '@/utils/got';
 import { load } from 'cheerio';
-const { rootUrl } = require('./utils');
+import { rootUrl } from './utils';
 
 export default async (ctx) => {
     const response = await got(`${rootUrl}/detail/${ctx.req.param('id')}`);

@@ -1,6 +1,5 @@
-// @ts-nocheck
 import cache from '@/utils/cache';
-const { defaultMode, defaultGenre, defaultLanguage, rootUrl, ProcessItems } = require('./utils');
+import { defaultMode, defaultGenre, defaultLanguage, rootUrl, ProcessItems } from './utils';
 
 export default async (ctx) => {
     const mode = ctx.req.param('mode') ?? defaultMode;

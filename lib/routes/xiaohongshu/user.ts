@@ -1,6 +1,5 @@
-// @ts-nocheck
 import cache from '@/utils/cache';
-const { getUser } = require('./util');
+import { getUser } from './util';
 
 export default async (ctx) => {
     const userId = ctx.req.param('user_id');

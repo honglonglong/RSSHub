@@ -1,4 +1,3 @@
-// @ts-nocheck
 import { getCurrentPath } from '@/utils/helpers';
 const __dirname = getCurrentPath(import.meta.url);
 
@@ -101,7 +100,4 @@ const cleanHtml = (htmlString) => {
     return $.html();
 };
 
-module.exports = {
-    ProcessForm,
-    ProcessFeed,
-};
+export { ProcessForm, ProcessFeed };

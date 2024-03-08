@@ -1,4 +1,3 @@
-// @ts-nocheck
 import { getCurrentPath } from '@/utils/helpers';
 const __dirname = getCurrentPath(import.meta.url);
 
@@ -27,7 +26,4 @@ const renderDesc = (title, authors, doi, img) =>
         img,
     });
 
-module.exports = {
-    puppeteerGet,
-    renderDesc,
-};
+export { puppeteerGet, renderDesc };

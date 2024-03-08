@@ -1,9 +1,8 @@
-// @ts-nocheck
 import cache from '@/utils/cache';
 import got from '@/utils/got';
 import { parseDate } from '@/utils/parse-date';
 
-const { rootUrl, ProcessItem } = require('./utils');
+import { rootUrl, ProcessItem } from './utils';
 
 const categories = {
     24: {

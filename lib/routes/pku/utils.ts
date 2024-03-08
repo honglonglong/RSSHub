@@ -1,4 +1,3 @@
-// @ts-nocheck
 const eecsMap = new Map([
     [0, 'qb.htm'],
     [1, 'xytz.htm'],
@@ -11,6 +10,4 @@ const eecsMap = new Map([
     [4, 'yytz.htm'],
 ]);
 
-module.exports = {
-    eecsMap,
-};
+export { eecsMap };

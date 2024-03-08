@@ -1,5 +1,4 @@
-// @ts-nocheck
-const { getItems } = require('./utils');
+import { getItems } from './utils';
 
 const url = 'https://www.jou.edu.cn/index/tzgg.htm';
 const host = 'https://www.jou.edu.cn';

@@ -1,4 +1,3 @@
-// @ts-nocheck
 const puppeteerGet = async (url, browser, includeStories = false) => {
     const page = await browser.newPage();
     const expectResourceTypes = includeStories ? ['document', 'script', 'xhr'] : ['document'];
@@ -22,6 +21,4 @@ const puppeteerGet = async (url, browser, includeStories = false) => {
     return html;
 };
 
-module.exports = {
-    puppeteerGet,
-};
+export { puppeteerGet };

@@ -1,4 +1,3 @@
-// @ts-nocheck
 import cache from '@/utils/cache';
 import got from '@/utils/got';
 import { load } from 'cheerio';
@@ -71,7 +70,4 @@ const ProcessFeed = (items, artiContent) =>
         )
     );
 
-module.exports = {
-    ProcessList,
-    ProcessFeed,
-};
+export default { ProcessList, ProcessFeed };

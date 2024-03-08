@@ -1,10 +1,9 @@
-// @ts-nocheck
 import { getCurrentPath } from '@/utils/helpers';
 const __dirname = getCurrentPath(import.meta.url);
 
 import got from '@/utils/got';
 import { load } from 'cheerio';
-const iconv = require('iconv-lite');
+import iconv from 'iconv-lite';
 import { art } from '@/utils/render';
 import * as path from 'node:path';
 
@@ -39,6 +38,4 @@ const parseDyArticle = (charset, item, tryGet) =>
         return item;
     });
 
-module.exports = {
-    parseDyArticle,
-};
+export { parseDyArticle };

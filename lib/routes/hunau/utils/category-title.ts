@@ -1,4 +1,3 @@
-// @ts-nocheck
 const categoryTitle = (type) => {
     let title;
     type = type.slice(0, 4).toLowerCase();
@@ -29,4 +28,4 @@ const categoryTitle = (type) => {
     return title;
 };
 
-module.exports = categoryTitle;
+export default categoryTitle;

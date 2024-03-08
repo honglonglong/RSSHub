@@ -1,6 +1,5 @@
-// @ts-nocheck
 import buildData from '@/utils/common-config';
-const weiboUtils = require('../utils');
+import weiboUtils from '../utils';
 
 export default async (ctx) => {
     const userid = ctx.req.param('userid');

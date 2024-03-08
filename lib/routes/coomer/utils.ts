@@ -1,10 +1,9 @@
-// @ts-nocheck
 import cache from '@/utils/cache';
 import got from '@/utils/got';
 import { load } from 'cheerio';
 import { parseDate } from '@/utils/parse-date';
 
-module.exports = async (ctx, currentUrl) => {
+export default async (ctx, currentUrl) => {
     const rootUrl = 'https://coomer.party';
     currentUrl = `${rootUrl}/${currentUrl}`;
 

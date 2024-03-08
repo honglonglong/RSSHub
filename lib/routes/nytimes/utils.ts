@@ -1,4 +1,3 @@
-// @ts-nocheck
 import cache from '@/utils/cache';
 import { load } from 'cheerio';
 import { parseDate } from '@/utils/parse-date';
@@ -109,7 +108,4 @@ const ProcessFeed = (data, hasEnVersion = false) => {
     return result;
 };
 
-module.exports = {
-    ProcessFeed,
-    PuppeterGetter,
-};
+export default { ProcessFeed, PuppeterGetter };

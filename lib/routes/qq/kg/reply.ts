@@ -1,5 +1,4 @@
-// @ts-nocheck
-const cache = require('./cache');
+import cache from './cache';
 import { parseDate } from '@/utils/parse-date';
 
 export default async (ctx) => {

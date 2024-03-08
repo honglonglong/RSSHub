@@ -1,4 +1,3 @@
-// @ts-nocheck
 import got from '@/utils/got';
 import { load } from 'cheerio';
 
@@ -21,6 +20,4 @@ async function getTeslaPrice(link) {
     return price;
 }
 
-module.exports = {
-    getTeslaPrice,
-};
+export { getTeslaPrice };

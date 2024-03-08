@@ -1,6 +1,5 @@
-// @ts-nocheck
 import cache from '@/utils/cache';
-const { rootUrl, apiRootUrl, types, ProcessThreads } = require('./utils');
+import { rootUrl, apiRootUrl, types, ProcessThreads } from './utils';
 
 export default async (ctx) => {
     const id = ctx.req.param('id') ?? '';

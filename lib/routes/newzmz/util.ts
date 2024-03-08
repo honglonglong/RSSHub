@@ -1,4 +1,3 @@
-// @ts-nocheck
 import { getCurrentPath } from '@/utils/helpers';
 const __dirname = getCurrentPath(import.meta.url);
 
@@ -161,9 +160,4 @@ const processItems = async (i, downLinkType, itemSelector, categorySelector, dow
         });
 };
 
-module.exports = {
-    rootUrl,
-    getItems,
-    getItemInfo,
-    processItems,
-};
+export { rootUrl, getItems, getItemInfo, processItems };

@@ -1,4 +1,3 @@
-// @ts-nocheck
 import got from '@/utils/got';
 import { load } from 'cheerio';
 import { parseDate } from '@/utils/parse-date';
@@ -50,8 +49,4 @@ const getPlurk = (plurkGuid, item, author, tryGet) =>
         };
     });
 
-module.exports = {
-    baseUrl,
-    fetchFriends,
-    getPlurk,
-};
+export { baseUrl, fetchFriends, getPlurk };

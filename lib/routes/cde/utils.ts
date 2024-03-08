@@ -1,4 +1,3 @@
-// @ts-nocheck
 import cache from '@/utils/cache';
 import got from '@/utils/got';
 
@@ -15,8 +14,4 @@ const getCookie = () =>
             .join('');
     });
 
-module.exports = {
-    title,
-    rootUrl,
-    getCookie,
-};
+export default { title, rootUrl, getCookie };

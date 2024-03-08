@@ -1,5 +1,4 @@
-// @ts-nocheck
-const { rootUrl, ProcessItems } = require('./utils');
+import { rootUrl, ProcessItems } from './utils';
 
 export default async (ctx) => {
     const tag = ctx.req.param('tag');

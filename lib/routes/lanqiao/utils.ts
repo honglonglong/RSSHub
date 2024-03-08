@@ -1,4 +1,3 @@
-// @ts-nocheck
 import { getCurrentPath } from '@/utils/helpers';
 const __dirname = getCurrentPath(import.meta.url);
 
@@ -11,6 +10,4 @@ const courseDesc = (picurl, desc) =>
         desc,
     });
 
-module.exports = {
-    courseDesc,
-};
+export default { courseDesc };

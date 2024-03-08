@@ -1,8 +1,7 @@
-// @ts-nocheck
 import got from '@/utils/got';
-const cache = require('./cache');
+import cache from './cache';
 import { config } from '@/config';
-const { post2item } = require('./utils');
+import { post2item } from './utils';
 
 export default async (ctx) => {
     if (!config.mihoyo.cookie) {

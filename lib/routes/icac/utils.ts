@@ -1,4 +1,3 @@
-// @ts-nocheck
 const BASE_URL = 'https://www.icac.org.hk';
 
 const LANG_TYPE = {
@@ -11,8 +10,4 @@ function langBase(lang) {
     return lang ? `${BASE_URL}/${lang}` : `https://www.icac.org.hk/sc`;
 }
 
-module.exports = {
-    LANG_TYPE,
-    BASE_URL,
-    langBase,
-};
+export default { LANG_TYPE, BASE_URL, langBase };

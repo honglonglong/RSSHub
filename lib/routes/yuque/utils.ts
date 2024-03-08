@@ -1,4 +1,3 @@
-// @ts-nocheck
 const card2Html = (elem, link) => {
     const name = elem.attr('name');
     const data = elem.attr('value')?.split('data:')[1]?.replace('undefined', '');
@@ -77,6 +76,4 @@ const card2Html = (elem, link) => {
     elem.replaceWith(html);
 };
 
-module.exports = {
-    card2Html,
-};
+export { card2Html };

@@ -1,4 +1,3 @@
-// @ts-nocheck
 import cache from '@/utils/cache';
 import got from '@/utils/got';
 import parser from '@/utils/rss-parser';
@@ -88,6 +87,4 @@ const getData = async ({ site = 'www', channel }) => {
     };
 };
 
-module.exports = {
-    getData,
-};
+export default { getData };

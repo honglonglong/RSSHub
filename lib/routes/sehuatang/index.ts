@@ -1,10 +1,9 @@
-// @ts-nocheck
 import cache from '@/utils/cache';
 import got from '@/utils/got';
 import { load } from 'cheerio';
 import { parseDate } from '@/utils/parse-date';
 import timezone from '@/utils/timezone';
-const { CookieJar } = require('tough-cookie');
+import { CookieJar } from 'tough-cookie';
 const cookieJar = new CookieJar();
 
 const host = 'https://www.sehuatang.net/';

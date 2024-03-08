@@ -1,6 +1,5 @@
-// @ts-nocheck
 import cache from '@/utils/cache';
-const { rootUrl, getData, processItems } = require('./util');
+import { rootUrl, getData, processItems } from './util';
 
 export default async (ctx) => {
     const { params = 'article-0-0-all-all-0-0-score' } = ctx.req.param();

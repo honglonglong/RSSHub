@@ -1,6 +1,5 @@
-// @ts-nocheck
 import { config } from '@/config';
-const Parser = require('rss-parser');
+import Parser from 'rss-parser';
 
 export default async (ctx) => {
     const parser = new Parser({

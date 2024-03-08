@@ -1,4 +1,3 @@
-// @ts-nocheck
 import got from '@/utils/got';
 import { load } from 'cheerio';
 import { parseDate } from '@/utils/parse-date';
@@ -117,10 +116,4 @@ const processItems = async (apiUrl, limit, tryGet, ...searchParams) => {
     return items;
 };
 
-module.exports = {
-    rootUrl,
-    apiRootUrl,
-
-    getInfo,
-    processItems,
-};
+export { rootUrl, apiRootUrl, getInfo, processItems };

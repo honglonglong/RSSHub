@@ -1,4 +1,3 @@
-// @ts-nocheck
 import got from '@/utils/got'; // 自订的 got
 import { load } from 'cheerio'; // 可以使用类似 jQuery 的 API HTML 解析器
 
@@ -46,8 +45,6 @@ async function getPageDetails(selector, pageUrl, titleSelector, dateSelector, da
               title: '无法获取标题',
           };
 }
+const getPageItemAndDate = getPageDetails;
 
-module.exports = {
-    getPageItem,
-    getPageItemAndDate: getPageDetails,
-};
+export { getPageItem, getPageItemAndDate };

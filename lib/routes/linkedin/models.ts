@@ -1,4 +1,3 @@
-// @ts-nocheck
 class Job {
     constructor(title, link, company, location, pubDate, recruiter, description) {
         this.title = title;
@@ -11,6 +10,4 @@ class Job {
     }
 }
 
-module.exports = {
-    Job,
-};
+export { Job };

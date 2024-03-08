@@ -1,6 +1,5 @@
-// @ts-nocheck
 import logger from '@/utils/logger';
-const { getItems } = require('./utils');
+import { getItems } from './utils';
 
 export default async (ctx) => {
     const { topic, category } = ctx.req.param();

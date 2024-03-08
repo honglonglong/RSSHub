@@ -1,6 +1,5 @@
-// @ts-nocheck
 import cache from '@/utils/cache';
-const { rootUrl, apiRootUrl, processItems, getInfo } = require('./util');
+import { rootUrl, apiRootUrl, processItems, getInfo } from './util';
 
 export default async (ctx) => {
     const name = ctx.req.param('name');

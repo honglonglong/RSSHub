@@ -1,4 +1,3 @@
-// @ts-nocheck
 import cache from '@/utils/cache';
 import md5 from '@/utils/md5';
 import { load } from 'cheerio';
@@ -142,10 +141,4 @@ const parseDynamic = async (item) => {
     };
 };
 
-module.exports = {
-    get_app_token,
-    base_url,
-    getHeaders,
-    parseDynamic,
-    dynamicTpye,
-};
+export default { get_app_token, base_url, getHeaders, parseDynamic, dynamicTpye };

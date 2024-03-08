@@ -1,9 +1,8 @@
-// @ts-nocheck
 import cache from '@/utils/cache';
 import { load } from 'cheerio';
 import got from '@/utils/got';
 
-const fetch = require('./fetch-article');
+import fetch from './fetch-article';
 
 export default async (ctx) => {
     const url = 'https://www.twreporter.org';

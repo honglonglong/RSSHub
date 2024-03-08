@@ -1,4 +1,3 @@
-// @ts-nocheck
 import { getCurrentPath } from '@/utils/helpers';
 const __dirname = getCurrentPath(import.meta.url);
 
@@ -47,8 +46,4 @@ const getItems = (ctx, list) =>
         )
     );
 
-module.exports = {
-    rootUrl,
-    getList,
-    getItems,
-};
+export { rootUrl, getList, getItems };

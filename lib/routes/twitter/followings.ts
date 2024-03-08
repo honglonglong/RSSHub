@@ -1,8 +1,7 @@
-// @ts-nocheck
-const utils = require('./utils');
+import utils from './utils';
 import { config } from '@/config';
 const T = {};
-const { TwitterApi } = require('twitter-api-v2');
+import { TwitterApi } from 'twitter-api-v2';
 import { fallback, queryToBoolean } from '@/utils/readable-social';
 
 export default async (ctx) => {

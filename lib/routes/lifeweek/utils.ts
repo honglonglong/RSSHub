@@ -1,4 +1,3 @@
-// @ts-nocheck
 import got from '@/utils/got';
 import timezone from '@/utils/timezone';
 import { parseDate } from '@/utils/parse-date';
@@ -16,4 +15,4 @@ async function getRssItem(item, articleLink) {
     };
 }
 
-module.exports = getRssItem;
+export default getRssItem;

@@ -1,4 +1,3 @@
-// @ts-nocheck
 import got from '@/utils/got';
 
 /**
@@ -13,6 +12,4 @@ const getData = async (modules = []) => {
     return response.data;
 };
 
-module.exports = {
-    getData,
-};
+export { getData };

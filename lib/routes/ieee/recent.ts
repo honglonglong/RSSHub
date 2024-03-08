@@ -1,4 +1,3 @@
-// @ts-nocheck
 import { getCurrentPath } from '@/utils/helpers';
 const __dirname = getCurrentPath(import.meta.url);
 
@@ -8,7 +7,7 @@ import { load } from 'cheerio';
 import * as path from 'node:path';
 import { art } from '@/utils/render';
 
-const { CookieJar } = require('tough-cookie');
+import { CookieJar } from 'tough-cookie';
 const cookieJar = new CookieJar();
 
 export default async (ctx) => {

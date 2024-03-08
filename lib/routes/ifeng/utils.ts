@@ -1,4 +1,3 @@
-// @ts-nocheck
 import { getCurrentPath } from '@/utils/helpers';
 const __dirname = getCurrentPath(import.meta.url);
 
@@ -24,7 +23,4 @@ const renderVideo = (videoInfo) =>
         videoInfo,
     });
 
-module.exports = {
-    extractDoc,
-    renderVideo,
-};
+export { extractDoc, renderVideo };

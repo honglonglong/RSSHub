@@ -1,4 +1,3 @@
-// @ts-nocheck
 import got from '@/utils/got';
 import { load } from 'cheerio';
 import timezone from '@/utils/timezone';
@@ -37,6 +36,4 @@ const parseArticle = (item, tryGet) =>
         return item;
     });
 
-module.exports = {
-    parseArticle,
-};
+export { parseArticle };

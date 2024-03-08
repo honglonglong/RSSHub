@@ -1,8 +1,7 @@
-// @ts-nocheck
 import { config } from '@/config';
 
-const parseArticle = require('./parse-article.js');
-const { getWebInlineRecommendedFeedQuery } = require('./graphql.js');
+import parseArticle from './parse-article.js';
+import { getWebInlineRecommendedFeedQuery } from './graphql.js';
 
 export default async (ctx) => {
     const user = ctx.req.param('user');

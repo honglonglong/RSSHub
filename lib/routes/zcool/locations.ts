@@ -1,5 +1,4 @@
-// @ts-nocheck
-module.exports = {
+export default {
     亚洲: 1,
     欧洲: 2,
     非洲: 3,

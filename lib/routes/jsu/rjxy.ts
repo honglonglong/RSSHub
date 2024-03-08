@@ -1,10 +1,9 @@
-// @ts-nocheck
 import cache from '@/utils/cache';
 // 导入必要的模组
 import got from '@/utils/got'; // 自订的 got
 import { load } from 'cheerio'; // 可以使用类似 jQuery 的 API HTML 解析器
 import { parseDate } from '@/utils/parse-date';
-const { getPageItemAndDate } = require('./utils');
+import { getPageItemAndDate } from './utils';
 
 export default async (ctx) => {
     const baseUrl = 'https://rjxy.jsu.edu.cn/';

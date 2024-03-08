@@ -1,6 +1,5 @@
-// @ts-nocheck
 import cache from '@/utils/cache';
-const { getData, getList } = require('./utils');
+import { getData, getList } from './utils';
 
 export default async (ctx) => {
     const baseUrl = 'https://web.stockedge.com/daily-updates?section=news';

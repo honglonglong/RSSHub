@@ -1,4 +1,3 @@
-// @ts-nocheck
 import got from '@/utils/got';
 
 const rootUrl = 'http://www.yxdown.com';
@@ -12,7 +11,4 @@ const getCookie = async () => {
     return cookieStr;
 };
 
-module.exports = {
-    rootUrl,
-    getCookie,
-};
+export { rootUrl, getCookie };

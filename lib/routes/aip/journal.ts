@@ -1,7 +1,6 @@
-// @ts-nocheck
 import got from '@/utils/got';
 import { load } from 'cheerio';
-const { renderDesc } = require('./utils');
+import { renderDesc } from './utils';
 
 export default async (ctx) => {
     const pub = ctx.req.param('pub');

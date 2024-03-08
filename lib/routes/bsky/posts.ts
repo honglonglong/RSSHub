@@ -1,10 +1,9 @@
-// @ts-nocheck
 import { getCurrentPath } from '@/utils/helpers';
 const __dirname = getCurrentPath(import.meta.url);
 
 import cache from '@/utils/cache';
 import { parseDate } from '@/utils/parse-date';
-const { resolveHandle, getProfile, getAuthorFeed } = require('./utils');
+import { resolveHandle, getProfile, getAuthorFeed } from './utils';
 import { art } from '@/utils/render';
 import * as path from 'node:path';
 

@@ -1,5 +1,4 @@
-// @ts-nocheck
-module.exports = {
+export default {
     wh: {
         news: {
             name: '山东大学（威海）新闻网',

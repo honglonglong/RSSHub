@@ -1,4 +1,3 @@
-// @ts-nocheck
 import { getCurrentPath } from '@/utils/helpers';
 const __dirname = getCurrentPath(import.meta.url);
 
@@ -30,8 +29,4 @@ const descpPage = (link, cache) =>
         };
     });
 
-module.exports = {
-    descpPage,
-    renderDetail,
-    renderDesc,
-};
+export default { descpPage, renderDetail, renderDesc };

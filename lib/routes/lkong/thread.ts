@@ -1,4 +1,3 @@
-// @ts-nocheck
 import { getCurrentPath } from '@/utils/helpers';
 const __dirname = getCurrentPath(import.meta.url);
 
@@ -7,7 +6,7 @@ import { parseDate } from '@/utils/parse-date';
 import { art } from '@/utils/render';
 import * as path from 'node:path';
 
-const { viewThread, countReplies } = require('./query');
+import { viewThread, countReplies } from './query';
 
 export default async (ctx) => {
     const id = ctx.req.param('id');

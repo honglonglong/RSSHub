@@ -1,6 +1,5 @@
-// @ts-nocheck
-const got = require('../pixiv-got');
-const maskHeader = require('../constants').maskHeader;
+import got from '../pixiv-got';
+import { maskHeader } from '../constants';
 import queryString from 'query-string';
 
 /**
@@ -10,7 +9,7 @@ import queryString from 'query-string';
  * @param {string} token pixiv oauth token
  * @returns {Promise<got.AxiosResponse<{illusts: illust[]}>>}
  */
-module.exports = function getBookmarks(user_id, token) {
+export default function getBookmarks(user_id, token) {
     return got('https://app-api.pixiv.net/v1/user/bookmarks/illust', {
         headers: {
             ...maskHeader,
@@ -21,4 +20,4 @@ module.exports = function getBookmarks(user_id, token) {
             restrict: 'public',
         }),
     });
-};
+}

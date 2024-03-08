@@ -1,4 +1,3 @@
-// @ts-nocheck
 import got from '@/utils/got';
 import puppeteer from '@/utils/puppeteer';
 
@@ -33,6 +32,4 @@ async function getContent(url, pptr = false) {
     }
 }
 
-module.exports = {
-    getContent,
-};
+export { getContent };

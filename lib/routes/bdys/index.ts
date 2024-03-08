@@ -1,4 +1,3 @@
-// @ts-nocheck
 import { getCurrentPath } from '@/utils/helpers';
 const __dirname = getCurrentPath(import.meta.url);
 
@@ -9,7 +8,7 @@ import { parseDate } from '@/utils/parse-date';
 import timezone from '@/utils/timezone';
 import { art } from '@/utils/render';
 import * as path from 'node:path';
-const asyncPool = require('tiny-async-pool');
+import asyncPool from 'tiny-async-pool';
 import { config } from '@/config';
 
 // Visit https://www.bdys.me for the list of domains

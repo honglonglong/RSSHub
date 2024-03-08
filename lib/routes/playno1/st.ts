@@ -1,10 +1,9 @@
-// @ts-nocheck
 import cache from '@/utils/cache';
 import got from '@/utils/got';
 import { load } from 'cheerio';
 import { parseDate } from '@/utils/parse-date';
 import timezone from '@/utils/timezone';
-const { cookieJar, processArticle } = require('./utils');
+import { cookieJar, processArticle } from './utils';
 const baseUrl = 'http://stno1.playno1.com';
 
 export default async (ctx) => {

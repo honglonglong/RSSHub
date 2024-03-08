@@ -1,6 +1,5 @@
-// @ts-nocheck
 import got from '@/utils/got';
-const { generateProductItem } = require('./utils');
+import { generateProductItem } from './utils';
 
 const familyPriceProductsRequest = ({ pageIndex = 1 }) =>
     got({

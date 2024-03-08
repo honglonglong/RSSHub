@@ -1,4 +1,3 @@
-// @ts-nocheck
 import { getCurrentPath } from '@/utils/helpers';
 const __dirname = getCurrentPath(import.meta.url);
 
@@ -19,7 +18,4 @@ const parseFloorItem = (floor) =>
         };
     });
 
-module.exports = {
-    parseModule,
-    parseFloorItem,
-};
+export { parseModule, parseFloorItem };

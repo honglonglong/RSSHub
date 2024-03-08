@@ -1,7 +1,6 @@
-// @ts-nocheck
 import cache from '@/utils/cache';
 import got from '@/utils/got';
-const { baseUrl, getPlurk } = require('./utils');
+import { baseUrl, getPlurk } from './utils';
 
 const categoryList = new Set(['topReplurks', 'topFavorites', 'topResponded']);
 

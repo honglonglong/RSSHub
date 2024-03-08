@@ -1,4 +1,3 @@
-// @ts-nocheck
 const puppeteerGet = async (url, browser) => {
     let data;
     const page = await browser.newPage();
@@ -16,6 +15,4 @@ const puppeteerGet = async (url, browser) => {
     return data;
 };
 
-module.exports = {
-    puppeteerGet,
-};
+export { puppeteerGet };

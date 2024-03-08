@@ -1,4 +1,3 @@
-// @ts-nocheck
 import got from '@/utils/got';
 import { load } from 'cheerio';
 
@@ -45,6 +44,4 @@ const ProcessFeed = async (type, id, order) => {
     };
 };
 
-module.exports = {
-    ProcessFeed,
-};
+export { ProcessFeed };

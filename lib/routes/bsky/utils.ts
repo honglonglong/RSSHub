@@ -1,4 +1,3 @@
-// @ts-nocheck
 import got from '@/utils/got';
 import { config } from '@/config';
 
@@ -46,8 +45,4 @@ const getAuthorFeed = (did, tryGet) =>
         false
     );
 
-module.exports = {
-    resolveHandle,
-    getProfile,
-    getAuthorFeed,
-};
+export { resolveHandle, getProfile, getAuthorFeed };

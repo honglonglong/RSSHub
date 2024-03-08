@@ -1,5 +1,4 @@
-// @ts-nocheck
-const util = require('./utils');
+import util from './utils';
 
 export default async (ctx) => {
     const type = ctx.req.param('type');

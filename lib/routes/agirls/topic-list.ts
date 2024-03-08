@@ -1,7 +1,6 @@
-// @ts-nocheck
 import got from '@/utils/got';
 import { load } from 'cheerio';
-const { baseUrl } = require('./utils');
+import { baseUrl } from './utils';
 
 export default async (ctx) => {
     const category = 'topic';

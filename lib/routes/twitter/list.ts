@@ -1,6 +1,5 @@
-// @ts-nocheck
 import cache from '@/utils/cache';
-const utils = require('./utils');
+import utils from './utils';
 import { config } from '@/config';
 
 export default async (ctx) => {

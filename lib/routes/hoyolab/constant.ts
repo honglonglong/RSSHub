@@ -1,4 +1,3 @@
-// @ts-nocheck
 // 域名
 const HOST = 'https://bbs-api-os.hoyolab.com';
 // 活动列接口
@@ -26,13 +25,4 @@ const OFFICIAL_PAGE_TYPE = {
     5: 43,
 };
 
-module.exports = {
-    PRIVATE_IMG,
-    PUBLIC_IMG,
-    LINK,
-    POST_FULL,
-    HOST,
-    EVENT_LIST,
-    NEW_LIST,
-    OFFICIAL_PAGE_TYPE,
-};
+export { PRIVATE_IMG, PUBLIC_IMG, LINK, POST_FULL, HOST, EVENT_LIST, NEW_LIST, OFFICIAL_PAGE_TYPE };

@@ -1,4 +1,3 @@
-// @ts-nocheck
 import { config } from '@/config';
 import logger from '@/utils/logger';
 import { parseDate } from '@/utils/parse-date';
@@ -195,10 +194,4 @@ const formatNote = (url, note) => ({
     updated: parseDate(note.lastUpdateTime, 'x'),
 });
 
-module.exports = {
-    getUser,
-    getBoard,
-    getNotes,
-    formatText,
-    formatNote,
-};
+export { getUser, getBoard, getNotes, formatText, formatNote };

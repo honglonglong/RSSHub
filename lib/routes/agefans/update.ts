@@ -1,8 +1,7 @@
-// @ts-nocheck
 import cache from '@/utils/cache';
 import got from '@/utils/got';
 import { load } from 'cheerio';
-const { rootUrl } = require('./utils');
+import { rootUrl } from './utils';
 
 export default async (ctx) => {
     const currentUrl = `${rootUrl}/update`;

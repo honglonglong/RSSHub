@@ -1,4 +1,3 @@
-// @ts-nocheck
 import { getCurrentPath } from '@/utils/helpers';
 const __dirname = getCurrentPath(import.meta.url);
 
@@ -70,11 +69,4 @@ const getBoards = (tryGet) =>
         }));
     });
 
-module.exports = {
-    token,
-    apiUrl,
-    rootUrl,
-    renderDesc,
-    renderSections,
-    getBoards,
-};
+export { token, apiUrl, rootUrl, renderDesc, renderSections, getBoards };

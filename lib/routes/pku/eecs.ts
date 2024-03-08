@@ -1,10 +1,9 @@
-// @ts-nocheck
 import cache from '@/utils/cache';
 import got from '@/utils/got';
 import { load } from 'cheerio';
 import { parseDate } from '@/utils/parse-date';
 
-const { eecsMap } = require('./utils');
+import { eecsMap } from './utils';
 
 export default async (ctx) => {
     const host = 'https://eecs.pku.edu.cn';

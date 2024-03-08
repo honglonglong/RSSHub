@@ -1,4 +1,3 @@
-// @ts-nocheck
 // example usage: `/nature/research/ng`
 // The journals from NPG are run by different group of people,
 // and the website of may not be consitent for all the journals
@@ -16,7 +15,7 @@
 
 import { load } from 'cheerio';
 import got from '@/utils/got';
-const { baseUrl, cookieJar, getArticleList, getDataLayer, getArticle } = require('./utils');
+import { baseUrl, cookieJar, getArticleList, getDataLayer, getArticle } from './utils';
 
 export default async (ctx) => {
     const journal = ctx.req.param('journal') ?? 'nature';

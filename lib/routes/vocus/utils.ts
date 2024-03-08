@@ -1,4 +1,3 @@
-// @ts-nocheck
 import got from '@/utils/got';
 import { load } from 'cheerio';
 import { parseDate } from '@/utils/parse-date';
@@ -44,9 +43,4 @@ const ProcessFeed = (list, tryGet) =>
         )
     );
 
-module.exports = {
-    processList,
-    ProcessFeed,
-    baseUrl,
-    apiUrl,
-};
+export { processList, ProcessFeed, baseUrl, apiUrl };

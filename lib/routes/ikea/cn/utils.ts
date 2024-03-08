@@ -1,4 +1,3 @@
-// @ts-nocheck
 import { getCurrentPath } from '@/utils/helpers';
 const __dirname = getCurrentPath(import.meta.url);
 
@@ -40,7 +39,4 @@ const generateProductItem = (product) => {
     };
 };
 
-module.exports = {
-    generateRequestHeaders,
-    generateProductItem,
-};
+export { generateRequestHeaders, generateProductItem };

@@ -1,4 +1,3 @@
-// @ts-nocheck
 import { load } from 'cheerio';
 import got from '@/utils/got';
 import { parseDate } from '@/utils/parse-date';
@@ -22,4 +21,4 @@ async function loadArticle(link) {
         link,
     };
 }
-module.exports = loadArticle;
+export default loadArticle;

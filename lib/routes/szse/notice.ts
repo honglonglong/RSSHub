@@ -1,8 +1,7 @@
-// @ts-nocheck
 import cache from '@/utils/cache';
 import got from '@/utils/got';
 import { load } from 'cheerio';
-const url = require('url');
+import * as url from 'node:url';
 const host = 'http://www.szse.cn/';
 export default async (ctx) => {
     const link = 'http://www.szse.cn/disclosure/notice/company/index.html';

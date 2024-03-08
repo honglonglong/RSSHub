@@ -1,6 +1,5 @@
-// @ts-nocheck
 import got from '@/utils/got';
-const utils = require('./utils');
+import utils from './utils';
 
 export default async (ctx) => {
     const rid = ctx.req.param('rid') || '0';

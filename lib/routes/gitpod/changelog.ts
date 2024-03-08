@@ -1,8 +1,7 @@
-// @ts-nocheck
 import got from '@/utils/got';
 import { load } from 'cheerio';
 import { parseDate } from '@/utils/parse-date';
-const { rootUrl } = require('./utils');
+import { rootUrl } from './utils';
 
 export default async (ctx) => {
     const response = await got(rootUrl + '/changelog');

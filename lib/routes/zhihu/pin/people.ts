@@ -1,6 +1,5 @@
-// @ts-nocheck
 import got from '@/utils/got';
-const { generateData } = require('./utils');
+import { generateData } from './utils';
 
 export default async (ctx) => {
     const id = ctx.req.param('id');

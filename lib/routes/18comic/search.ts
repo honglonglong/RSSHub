@@ -1,5 +1,4 @@
-// @ts-nocheck
-const { defaultDomain, getRootUrl, ProcessItems } = require('./utils');
+import { defaultDomain, getRootUrl, ProcessItems } from './utils';
 
 export default async (ctx) => {
     const option = ctx.req.param('option') ?? 'photos';

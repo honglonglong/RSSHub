@@ -1,5 +1,4 @@
-// @ts-nocheck
-module.exports = {
+export default {
     ca: {
         country: 'ca',
         countryCN: '加拿大',

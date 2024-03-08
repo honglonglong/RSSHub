@@ -1,4 +1,3 @@
-// @ts-nocheck
 // Credit:
 // https://blog.csdn.net/zjq592767809/article/details/126512798
 // https://blog.csdn.net/zhoumi_/article/details/126659351
@@ -123,4 +122,4 @@ const encrypt = (md5Str) => {
     return resultStr;
 };
 
-module.exports = encrypt;
+export default encrypt;

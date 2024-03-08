@@ -1,6 +1,5 @@
-// @ts-nocheck
 import cache from '@/utils/cache';
-const { getProviderList } = require('./utils');
+import { getProviderList } from './utils';
 
 export default async (ctx) => {
     const region = ctx.req.param('region');

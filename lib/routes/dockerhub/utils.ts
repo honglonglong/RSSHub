@@ -1,4 +1,3 @@
-// @ts-nocheck
 import md5 from '@/utils/md5';
 
 function hash(images) {
@@ -8,4 +7,4 @@ function hash(images) {
     return md5(entries.map((x) => x.join(',')).join('|'));
 }
 
-module.exports = { hash };
+export { hash };

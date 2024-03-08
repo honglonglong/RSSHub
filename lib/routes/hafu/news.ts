@@ -1,5 +1,4 @@
-// @ts-nocheck
-const parseList = require('./utils');
+import parseList from './utils';
 
 export default async (ctx) => {
     // set default router type

@@ -1,8 +1,7 @@
-// @ts-nocheck
 import cache from '@/utils/cache';
 import got from '@/utils/got';
 import { load } from 'cheerio';
-const util = require('./utils');
+import util from './utils';
 
 export default async (ctx) => {
     const link = 'https://cs.bit.edu.cn/tzgg/';

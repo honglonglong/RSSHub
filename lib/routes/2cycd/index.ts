@@ -1,10 +1,9 @@
-// @ts-nocheck
 import cache from '@/utils/cache';
 import got from '@/utils/got';
 import { load } from 'cheerio';
 import { parseDate } from '@/utils/parse-date';
 import timezone from '@/utils/timezone';
-const iconv = require('iconv-lite');
+import iconv from 'iconv-lite';
 
 // http://www.2cycd.com/forum.php?mod=forumdisplay&fid=43&orderby=dateline
 

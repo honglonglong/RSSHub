@@ -1,4 +1,3 @@
-// @ts-nocheck
 import { getCurrentPath } from '@/utils/helpers';
 const __dirname = getCurrentPath(import.meta.url);
 
@@ -132,10 +131,4 @@ const universalGet = async (url, route) => {
     return data;
 };
 
-module.exports = {
-    templates,
-    resolveUrl,
-    proxyVideo,
-    getOriginAvatar,
-    universalGet,
-};
+export { templates, resolveUrl, proxyVideo, getOriginAvatar, universalGet };

@@ -1,4 +1,3 @@
-// @ts-nocheck
 import { getCurrentPath } from '@/utils/helpers';
 const __dirname = getCurrentPath(import.meta.url);
 
@@ -8,7 +7,7 @@ import { parseDate } from '@/utils/parse-date';
 import { art } from '@/utils/render';
 import * as path from 'node:path';
 
-const { sorts, types } = require('./util');
+import { sorts, types } from './util';
 
 export default async (ctx) => {
     const { type = 'game', sort = 'new', filter } = ctx.req.param();

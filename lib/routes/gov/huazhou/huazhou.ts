@@ -1,5 +1,4 @@
-// @ts-nocheck
-const { gdgov } = require('../general/general');
+import { gdgov } from '../general/general';
 
 export default async (ctx) => {
     const info = {

@@ -1,10 +1,9 @@
-// @ts-nocheck
 import cache from '@/utils/cache';
 import got from '@/utils/got';
 import { load } from 'cheerio';
 import timezone from '@/utils/timezone';
 import { parseDate } from '@/utils/parse-date';
-const iconv = require('iconv-lite');
+import iconv from 'iconv-lite';
 import { isValidHost } from '@/utils/valid-host';
 
 const setCookie = function (cookieName, cookieValue, seconds, path, domain, secure) {

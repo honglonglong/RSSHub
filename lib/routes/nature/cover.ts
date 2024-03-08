@@ -1,4 +1,3 @@
-// @ts-nocheck
 import cache from '@/utils/cache';
 // The content is generateed by undocumentated API of nature journals
 // This router has **just** been tested in:
@@ -19,8 +18,8 @@ import cache from '@/utils/cache';
 import got from '@/utils/got';
 import { load } from 'cheerio';
 import { parseDate } from '@/utils/parse-date';
-const { baseUrl, journalMap } = require('./utils');
-const { CookieJar } = require('tough-cookie');
+import { baseUrl, journalMap } from './utils';
+import { CookieJar } from 'tough-cookie';
 
 export default async (ctx) => {
     const cookieJar = new CookieJar();

@@ -1,7 +1,6 @@
-// @ts-nocheck
 import { load } from 'cheerio';
 
-module.exports = {
+export default {
     header: {
         'x-api-version': '3.0.91',
     },

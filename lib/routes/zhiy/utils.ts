@@ -1,4 +1,3 @@
-// @ts-nocheck
 import got from '@/utils/got';
 
 const baseUrl = 'https://zhiy.cc';
@@ -8,7 +7,4 @@ const fetchUserDate = async (author) => {
     return userData;
 };
 
-module.exports = {
-    baseUrl,
-    fetchUserDate,
-};
+export { baseUrl, fetchUserDate };

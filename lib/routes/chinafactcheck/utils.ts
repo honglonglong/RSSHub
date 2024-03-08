@@ -1,4 +1,3 @@
-// @ts-nocheck
 import { load } from 'cheerio';
 import got from '@/utils/got';
 import { parseDate } from '@/utils/parse-date';
@@ -52,7 +51,7 @@ class ArticleDetail {
     }
 }
 
-module.exports = {
+export default {
     siteLink,
     cleanDom,
     getArticleDetail,

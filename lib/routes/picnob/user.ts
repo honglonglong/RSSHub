@@ -1,4 +1,3 @@
-// @ts-nocheck
 import { getCurrentPath } from '@/utils/helpers';
 const __dirname = getCurrentPath(import.meta.url);
 
@@ -8,7 +7,7 @@ import { load } from 'cheerio';
 import { parseDate } from '@/utils/parse-date';
 import { art } from '@/utils/render';
 import * as path from 'node:path';
-const { puppeteerGet } = require('./utils');
+import { puppeteerGet } from './utils';
 import puppeteer from '@/utils/puppeteer';
 
 export default async (ctx) => {

@@ -1,4 +1,3 @@
-// @ts-nocheck
 import md5 from '@/utils/md5';
 
 const SALT = '1Ftjv0bfpVmqbE38';
@@ -27,7 +26,4 @@ const sign = (params) => {
     return md5(`${searchParams.toString()}_${SALT}`);
 };
 
-module.exports = {
-    getClientVal,
-    sign,
-};
+export { getClientVal, sign };

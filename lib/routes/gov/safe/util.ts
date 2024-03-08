@@ -1,4 +1,3 @@
-// @ts-nocheck
 import { getCurrentPath } from '@/utils/helpers';
 const __dirname = getCurrentPath(import.meta.url);
 
@@ -86,6 +85,4 @@ const processZxfkItems = async (site = 'beijing', category = 'ywzx', limit = '3'
     };
 };
 
-module.exports = {
-    processZxfkItems,
-};
+export { processZxfkItems };

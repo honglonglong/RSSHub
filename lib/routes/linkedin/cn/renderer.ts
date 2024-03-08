@@ -1,4 +1,3 @@
-// @ts-nocheck
 const text_tag = {
     LINE_BREAK: 0,
     INLINE_CODE: 1,
@@ -175,6 +174,4 @@ const parseAttr = (description) => {
     return q.join('');
 };
 
-module.exports = {
-    parseAttr,
-};
+export { parseAttr };

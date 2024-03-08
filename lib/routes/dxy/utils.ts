@@ -1,5 +1,4 @@
-// @ts-nocheck
-const CryptoJS = require('crypto-js');
+import CryptoJS from 'crypto-js';
 import got from '@/utils/got';
 import { load } from 'cheerio';
 import { parseDate } from '@/utils/parse-date';
@@ -64,10 +63,4 @@ const getPost = (item, tryGet) =>
         return item;
     });
 
-module.exports = {
-    phoneBaseUrl,
-    webBaseUrl,
-    generateNonce,
-    sign,
-    getPost,
-};
+export { phoneBaseUrl, webBaseUrl, generateNonce, sign, getPost };

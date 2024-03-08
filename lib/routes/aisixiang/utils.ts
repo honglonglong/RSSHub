@@ -1,4 +1,3 @@
-// @ts-nocheck
 import got from '@/utils/got';
 import { load } from 'cheerio';
 import timezone from '@/utils/timezone';
@@ -37,8 +36,4 @@ const ProcessFeed = (limit, tryGet, items) =>
         )
     );
 
-module.exports = {
-    rootUrl,
-    ossUrl,
-    ProcessFeed,
-};
+export { rootUrl, ossUrl, ProcessFeed };

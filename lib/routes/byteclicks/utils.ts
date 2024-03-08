@@ -1,4 +1,3 @@
-// @ts-nocheck
 import { parseDate } from '@/utils/parse-date';
 
 const parseItem = (data) =>
@@ -9,6 +8,4 @@ const parseItem = (data) =>
         link: item.link,
     }));
 
-module.exports = {
-    parseItem,
-};
+export { parseItem };

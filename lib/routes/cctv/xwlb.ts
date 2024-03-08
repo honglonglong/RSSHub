@@ -1,11 +1,10 @@
-// @ts-nocheck
 import cache from '@/utils/cache';
 import got from '@/utils/got';
 import { parseDate } from '@/utils/parse-date';
 import timezone from '@/utils/timezone';
 import { load } from 'cheerio';
-const dayjs = require('dayjs');
-const customParseFormat = require('dayjs/plugin/customParseFormat');
+import dayjs from 'dayjs';
+import customParseFormat from 'dayjs/plugin/customParseFormat';
 dayjs.extend(customParseFormat);
 
 export default async (ctx) => {

@@ -1,4 +1,3 @@
-// @ts-nocheck
 import cache from '@/utils/cache';
 import got from '@/utils/got';
 import { parseDate } from '@/utils/parse-date';
@@ -132,10 +131,4 @@ async function getAccountIdByAcct(acct) {
     return { site, account_id };
 }
 
-module.exports = {
-    apiHeaders,
-    parseStatuses,
-    getAccountStatuses,
-    getAccountIdByAcct,
-    allowSiteList,
-};
+export default { apiHeaders, parseStatuses, getAccountStatuses, getAccountIdByAcct, allowSiteList };

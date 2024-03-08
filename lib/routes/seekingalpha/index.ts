@@ -1,9 +1,8 @@
-// @ts-nocheck
 import cache from '@/utils/cache';
 import got from '@/utils/got';
 import { load } from 'cheerio';
 import { parseDate } from '@/utils/parse-date';
-const dayjs = require('dayjs');
+import dayjs from 'dayjs';
 const baseUrl = 'https://seekingalpha.com';
 
 export default async (ctx) => {

@@ -1,8 +1,7 @@
-// @ts-nocheck
 import cache from '@/utils/cache';
 import got from '@/utils/got';
 import { load } from 'cheerio';
-const { baseUrl, parseItem } = require('./utils');
+import { baseUrl, parseItem } from './utils';
 
 export default async (ctx) => {
     const { type = 'cameras' } = ctx.req.param();

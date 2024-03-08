@@ -1,4 +1,3 @@
-// @ts-nocheck
 import { getCurrentPath } from '@/utils/helpers';
 const __dirname = getCurrentPath(import.meta.url);
 
@@ -29,7 +28,4 @@ const parseNotes = (data, site) =>
         };
     });
 
-module.exports = {
-    parseNotes,
-    allowSiteList,
-};
+export default { parseNotes, allowSiteList };

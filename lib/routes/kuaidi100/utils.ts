@@ -1,4 +1,3 @@
-// @ts-nocheck
 import cache from '@/utils/cache';
 import got from '@/utils/got';
 const wwwid_key = 'kuaidi100-wwwid';
@@ -140,7 +139,7 @@ function clearCookie() {
     cache.set(csrf_key, null);
 }
 
-module.exports = {
+export default {
     company: () => getCompanyList(),
     checkCode: async (number, id, phone) => {
         const list = await getCompanyList();

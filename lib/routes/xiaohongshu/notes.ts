@@ -1,6 +1,5 @@
-// @ts-nocheck
 import cache from '@/utils/cache';
-const { getNotes, formatText, formatNote } = require('./util');
+import { getNotes, formatText, formatNote } from './util';
 
 export default async (ctx) => {
     const userId = ctx.req.param('user_id');

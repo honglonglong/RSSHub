@@ -1,6 +1,5 @@
-// @ts-nocheck
 import got from '@/utils/got';
-const auth = require('./auth');
+import auth from './auth';
 import { load } from 'cheerio';
 import { parseDate } from '@/utils/parse-date';
 

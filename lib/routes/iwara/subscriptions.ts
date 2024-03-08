@@ -1,4 +1,3 @@
-// @ts-nocheck
 import { getCurrentPath } from '@/utils/helpers';
 const __dirname = getCurrentPath(import.meta.url);
 
@@ -8,7 +7,8 @@ import { config } from '@/config';
 import { art } from '@/utils/render';
 import { parseDate } from '@/utils/parse-date';
 import * as path from 'node:path';
-const md = require('markdown-it')({
+import MarkdownIt from 'markdown-it';
+const md = MarkdownIt({
     html: true,
 });
 

@@ -1,4 +1,3 @@
-// @ts-nocheck
 function getElementChildrenInnerText(element) {
     let text = '';
     for (const child of element.children) {
@@ -13,6 +12,4 @@ function getElementChildrenInnerText(element) {
     return text;
 }
 
-module.exports = {
-    getElementChildrenInnerText,
-};
+export { getElementChildrenInnerText };

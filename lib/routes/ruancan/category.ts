@@ -1,5 +1,4 @@
-// @ts-nocheck
-const fetchFeed = require('./utils');
+import fetchFeed from './utils';
 
 export default async (ctx) => {
     const category = ctx.req.param('category');

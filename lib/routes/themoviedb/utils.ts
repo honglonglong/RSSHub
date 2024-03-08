@@ -1,4 +1,3 @@
-// @ts-nocheck
 import { getCurrentPath } from '@/utils/helpers';
 const __dirname = getCurrentPath(import.meta.url);
 
@@ -35,4 +34,4 @@ const MEDIA_TYPE_TO_ITEM_HANDLE = {
     movie: handleMovieItem,
 };
 
-module.exports = { handleDescription, handleMovieItem, handleTVShowItem, MEDIA_TYPE_TO_ITEM_HANDLE };
+export { handleDescription, handleMovieItem, handleTVShowItem, MEDIA_TYPE_TO_ITEM_HANDLE };

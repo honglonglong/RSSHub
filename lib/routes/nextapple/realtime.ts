@@ -1,9 +1,8 @@
-// @ts-nocheck
 import cache from '@/utils/cache';
 import got from '@/utils/got';
 import { parseDate } from '@/utils/parse-date';
 import { load } from 'cheerio';
-const asyncPool = require('tiny-async-pool');
+import asyncPool from 'tiny-async-pool';
 
 export default async (ctx) => {
     const category = ctx.req.param('category') ?? 'latest';

@@ -1,10 +1,9 @@
-// @ts-nocheck
 import cache from '@/utils/cache';
 import { parseDate } from '@/utils/parse-date';
 import { art } from '@/utils/render';
 import { config } from '@/config';
 import { fallback, queryToBoolean } from '@/utils/readable-social';
-const { templates, resolveUrl, proxyVideo, getOriginAvatar, universalGet } = require('./utils');
+import { templates, resolveUrl, proxyVideo, getOriginAvatar, universalGet } from './utils';
 
 export default async (ctx) => {
     const uid = ctx.req.param('uid');

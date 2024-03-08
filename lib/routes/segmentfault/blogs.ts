@@ -1,7 +1,6 @@
-// @ts-nocheck
 import cache from '@/utils/cache';
 import got from '@/utils/got';
-const { host, acw_sc__v2, parseList, parseItems } = require('./utils');
+import { host, acw_sc__v2, parseList, parseItems } from './utils';
 
 export default async (ctx) => {
     const tag = ctx.req.param('tag');

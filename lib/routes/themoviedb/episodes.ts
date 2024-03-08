@@ -1,8 +1,7 @@
-// @ts-nocheck
 import got from '@/utils/got';
 import { parseDate } from '@/utils/parse-date';
-const apiKey = require('./api-key');
-const { handleDescription } = require('./utils');
+import apiKey from './api-key';
+import { handleDescription } from './utils';
 
 export default async (ctx) => {
     const { id, seasonNumber, lang } = ctx.req.param();

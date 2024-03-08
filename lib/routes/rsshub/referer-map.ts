@@ -1,4 +1,3 @@
-// @ts-nocheck
 const refererMap = new Map([
     ['fbcdn.net', 'https://www.facebook.com/'],
     ['cdninstagram.com', 'https://www.instagram.com/'],
@@ -12,6 +11,4 @@ const refererMap = new Map([
     ['sinaimg.cn', 'https://weibo.com/'],
 ]);
 
-module.exports = {
-    refererMap,
-};
+export { refererMap };

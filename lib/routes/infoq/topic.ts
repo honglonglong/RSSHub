@@ -1,7 +1,6 @@
-// @ts-nocheck
 import cache from '@/utils/cache';
 import got from '@/utils/got';
-const utils = require('./utils');
+import utils from './utils';
 
 export default async (ctx) => {
     const paramId = ctx.req.param('id');

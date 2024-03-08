@@ -1,6 +1,5 @@
-// @ts-nocheck
 import got from '@/utils/got';
-const utils = require('./utils');
+import utils from './utils';
 
 export default async (ctx) => {
     let bvid = ctx.req.param('bvid');

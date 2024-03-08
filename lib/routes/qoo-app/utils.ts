@@ -1,4 +1,3 @@
-// @ts-nocheck
 import { parseDate } from '@/utils/parse-date';
 import timezone from '@/utils/timezone';
 
@@ -46,13 +45,4 @@ const extractNotes = ($) => {
         });
 };
 
-module.exports = {
-    appsUrl,
-    newsUrl,
-    notesUrl,
-    ssoUrl,
-    userUrl,
-    siteIcon,
-    fixImg,
-    extractNotes,
-};
+export { appsUrl, newsUrl, notesUrl, ssoUrl, userUrl, siteIcon, fixImg, extractNotes };

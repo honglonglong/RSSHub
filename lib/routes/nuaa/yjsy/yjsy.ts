@@ -1,9 +1,8 @@
-// @ts-nocheck
 import cache from '@/utils/cache';
 import got from '@/utils/got';
 import { load } from 'cheerio';
 import { parseDate } from '@/utils/parse-date';
-const getCookie = require('../utils/pypasswaf');
+import getCookie from '../utils/pypasswaf';
 const host = 'http://www.graduate.nuaa.edu.cn/';
 
 const map = new Map([

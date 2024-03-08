@@ -1,8 +1,7 @@
-// @ts-nocheck
 import got from '@/utils/got';
 import { load } from 'cheerio';
-const url = require('url');
-const iconv = require('iconv-lite');
+import * as url from 'node:url';
+import iconv from 'iconv-lite';
 
 const gbk2utf8 = (s) => iconv.decode(s, 'gbk');
 
@@ -70,6 +69,4 @@ const ProcessFeed = (list, caches) => {
     );
 };
 
-module.exports = {
-    ProcessFeed,
-};
+export default { ProcessFeed };

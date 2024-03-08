@@ -1,4 +1,3 @@
-// @ts-nocheck
 import { getCurrentPath } from '@/utils/helpers';
 const __dirname = getCurrentPath(import.meta.url);
 
@@ -6,7 +5,7 @@ import got from '@/utils/got';
 import { parseDate } from '@/utils/parse-date';
 import { art } from '@/utils/render';
 import * as path from 'node:path';
-const CryptoJS = require('crypto-js');
+import CryptoJS from 'crypto-js';
 
 export default async (ctx) => {
     const KEY = 'f0fc4c668392f9f9a447e48584c214ee';

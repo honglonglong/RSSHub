@@ -1,8 +1,7 @@
-// @ts-nocheck
 import cache from '@/utils/cache';
 import got from '@/utils/got';
 import { load } from 'cheerio';
-const { URL } = require('url');
+import { URL } from 'url';
 import { parseDate } from '@/utils/parse-date';
 
 /* 新闻列表

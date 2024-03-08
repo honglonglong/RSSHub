@@ -1,5 +1,4 @@
-// @ts-nocheck
-const { processItems } = require('./utils');
+import { processItems } from './utils';
 
 const baseURL = 'https://www.hao6v.tv/gvod/dsj.html';
 

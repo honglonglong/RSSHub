@@ -1,4 +1,3 @@
-// @ts-nocheck
 import got from '@/utils/got';
 import { load } from 'cheerio';
 import { parseDate } from '@/utils/parse-date';
@@ -37,8 +36,4 @@ const parseItem = async (item) => {
     return item;
 };
 
-module.exports = {
-    baseUrl,
-    parseList,
-    parseItem,
-};
+export { baseUrl, parseList, parseItem };

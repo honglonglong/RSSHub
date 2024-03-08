@@ -1,4 +1,3 @@
-// @ts-nocheck
 import { getCurrentPath } from '@/utils/helpers';
 const __dirname = getCurrentPath(import.meta.url);
 
@@ -8,7 +7,7 @@ import { load } from 'cheerio';
 import timezone from '@/utils/timezone';
 import { parseDate } from '@/utils/parse-date';
 import { art } from '@/utils/render';
-const dayjs = require('dayjs');
+import dayjs from 'dayjs';
 import * as path from 'node:path';
 
 const rootUrl = 'https://www.dlsite.com';
@@ -176,6 +175,4 @@ const ProcessItems = async (ctx) => {
     };
 };
 
-module.exports = {
-    ProcessItems,
-};
+export { ProcessItems };

@@ -1,8 +1,7 @@
-// @ts-nocheck
 import got from '@/utils/got';
 import queryString from 'query-string';
 import { parseDate } from '@/utils/parse-date';
-const sanitizeHtml = require('sanitize-html');
+import sanitizeHtml from 'sanitize-html';
 
 export default async (ctx) => {
     const res1 = await got({

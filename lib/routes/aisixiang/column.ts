@@ -1,11 +1,10 @@
-// @ts-nocheck
 import cache from '@/utils/cache';
 import got from '@/utils/got';
 import { load } from 'cheerio';
 import timezone from '@/utils/timezone';
 import { parseDate } from '@/utils/parse-date';
 
-const { rootUrl, ossUrl, ProcessFeed } = require('./utils');
+import { rootUrl, ossUrl, ProcessFeed } from './utils';
 
 export default async (ctx) => {
     const id = ctx.req.param('id');

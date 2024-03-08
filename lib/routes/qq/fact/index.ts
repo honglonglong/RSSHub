@@ -1,4 +1,3 @@
-// @ts-nocheck
 import { getCurrentPath } from '@/utils/helpers';
 const __dirname = getCurrentPath(import.meta.url);
 
@@ -6,7 +5,7 @@ import cache from '@/utils/cache';
 import got from '@/utils/got';
 import { parseDate } from '@/utils/parse-date';
 import { load } from 'cheerio';
-const CryptoJS = require('crypto-js');
+import CryptoJS from 'crypto-js';
 import { art } from '@/utils/render';
 import * as path from 'node:path';
 

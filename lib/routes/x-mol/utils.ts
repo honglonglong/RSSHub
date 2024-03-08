@@ -1,4 +1,3 @@
-// @ts-nocheck
-module.exports = {
+export default {
     host: 'https://www.x-mol.com',
 };

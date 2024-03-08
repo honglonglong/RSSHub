@@ -1,10 +1,9 @@
-// @ts-nocheck
 import got from '@/utils/got'; // get web content
 import { load } from 'cheerio'; // html parser
 import { parseDate } from '@/utils/parse-date';
 import timezone from '@/utils/timezone';
 
-module.exports = async function get_article(url) {
+export default async function get_article(url) {
     const domain = 'https://www.solidot.org';
 
     if (/^\/.*$/.test(url)) {
@@ -48,4 +47,4 @@ module.exports = async function get_article(url) {
         category,
     };
     return item;
-};
+}

@@ -1,7 +1,6 @@
-// @ts-nocheck
 import got from '@/utils/got';
-const auth = require('./auth');
-const utils = require('../utils');
+import auth from './auth';
+import utils from '../utils';
 import { parseDate } from '@/utils/parse-date';
 
 export default async (ctx) => {

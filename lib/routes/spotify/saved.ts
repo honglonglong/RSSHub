@@ -1,5 +1,4 @@
-// @ts-nocheck
-const utils = require('./utils');
+import utils from './utils';
 import got from '@/utils/got';
 import { parseDate } from '@/utils/parse-date';
 

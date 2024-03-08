@@ -1,4 +1,3 @@
-// @ts-nocheck
 import got from '@/utils/got';
 import { parseDate } from '@/utils/parse-date';
 import timezone from '@/utils/timezone';
@@ -22,4 +21,4 @@ const getList = (data) =>
         };
     });
 
-module.exports = { getData, getList };
+export { getData, getList };

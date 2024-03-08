@@ -1,4 +1,3 @@
-// @ts-nocheck
 import { getCurrentPath } from '@/utils/helpers';
 const __dirname = getCurrentPath(import.meta.url);
 
@@ -163,18 +162,4 @@ const renderTipGoal = (tipGoalId, tipGoals) => {
     });
 };
 
-module.exports = {
-    findAccountById,
-    baseUrl,
-    icon,
-    getAccountByUsername,
-    getTimelineByAccountId,
-    getTagId,
-    getTagSuggestion,
-    parseAttachments,
-    parseDescription,
-    parseMedia,
-    renderMedia,
-    renderPoll,
-    renderTipGoal,
-};
+export { findAccountById, baseUrl, icon, getAccountByUsername, getTimelineByAccountId, getTagId, getTagSuggestion, parseAttachments, parseDescription, parseMedia, renderMedia, renderPoll, renderTipGoal };

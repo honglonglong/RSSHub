@@ -1,5 +1,4 @@
-// @ts-nocheck
-const { getData, getList, getRedirectedLink } = require('./utils.js');
+import { getData, getList, getRedirectedLink } from './utils.js';
 
 const variables = {
     period: 7,

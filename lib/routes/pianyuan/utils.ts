@@ -1,4 +1,3 @@
-// @ts-nocheck
 import { load } from 'cheerio';
 import got from '@/utils/got';
 import { config } from '@/config';
@@ -83,7 +82,4 @@ async function request(link, cache) {
     return response;
 }
 
-module.exports = {
-    ProcessFeed,
-    request,
-};
+export default { ProcessFeed, request };

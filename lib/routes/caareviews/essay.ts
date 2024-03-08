@@ -1,5 +1,4 @@
-// @ts-nocheck
-const { rootUrl, getList, getItems } = require('./utils');
+import { rootUrl, getList, getItems } from './utils';
 
 export default async (ctx) => {
     const url = `${rootUrl}/reviews/essay`;

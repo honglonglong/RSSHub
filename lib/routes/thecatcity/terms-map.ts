@@ -1,4 +1,3 @@
-// @ts-nocheck
 const termsMap = {
     '': {
         title: 'CatCity 貓奴日常 | 貓咪日常照顧、新手準備、貓用品、貓咪醫療',
@@ -26,6 +25,4 @@ const termsMap = {
     },
 };
 
-module.exports = {
-    termsMap,
-};
+export { termsMap };

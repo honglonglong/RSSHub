@@ -1,4 +1,3 @@
-// @ts-nocheck
 import { getCurrentPath } from '@/utils/helpers';
 const __dirname = getCurrentPath(import.meta.url);
 
@@ -50,6 +49,4 @@ const getData = async (ctx, list) => {
     return items;
 };
 
-module.exports = {
-    getData,
-};
+export { getData };

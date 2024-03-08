@@ -1,4 +1,3 @@
-// @ts-nocheck
 import { getCurrentPath } from '@/utils/helpers';
 const __dirname = getCurrentPath(import.meta.url);
 
@@ -89,7 +88,7 @@ const fetchAllCharacters = (data, base) => {
     return info;
 };
 
-module.exports = {
+export default {
     BASE: base,
     langBase,
     fetchAllCharacters,

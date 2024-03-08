@@ -1,5 +1,4 @@
-// @ts-nocheck
-const { getData, getList } = require('./utils');
+import { getData, getList } from './utils';
 
 export default async (ctx) => {
     const baseUrl = 'https://alistapart.com';

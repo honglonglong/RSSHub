@@ -1,4 +1,3 @@
-// @ts-nocheck
 import got from '@/utils/got';
 import { load } from 'cheerio';
 import { config } from '@/config';
@@ -113,11 +112,4 @@ const getTribeSets = (id, limit, tryGet) =>
         false
     );
 
-module.exports = {
-    baseUrl,
-    getUserInfoFromUsername,
-    getUserInfoFromId,
-    getUserWorks,
-    getTribeDetail,
-    getTribeSets,
-};
+export { baseUrl, getUserInfoFromUsername, getUserInfoFromId, getUserWorks, getTribeDetail, getTribeSets };

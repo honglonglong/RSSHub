@@ -1,8 +1,7 @@
-// @ts-nocheck
 import cache from '@/utils/cache';
 import got from '@/utils/got';
 import { load } from 'cheerio';
-const { parseItem } = require('./utils');
+import { parseItem } from './utils';
 
 export default async (ctx) => {
     const type = ctx.req.param('type') === 'week' ? 1 : 0;

@@ -1,4 +1,3 @@
-// @ts-nocheck
 import got from '@/utils/got';
 import { load } from 'cheerio';
 import timezone from '@/utils/timezone';
@@ -70,9 +69,4 @@ const fetchData = ($, currentUrl) => {
     };
 };
 
-module.exports = {
-    rootUrl,
-
-    processItems,
-    fetchData,
-};
+export { rootUrl, processItems, fetchData };

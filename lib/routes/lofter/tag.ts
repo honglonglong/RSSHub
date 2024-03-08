@@ -1,8 +1,7 @@
-// @ts-nocheck
 import got from '@/utils/got';
 import { load } from 'cheerio';
 import { parseDate } from '@/utils/parse-date';
-const { JSDOM } = require('jsdom');
+import { JSDOM } from 'jsdom';
 
 export default async (ctx) => {
     const name = ctx.req.param('name') ?? '摄影';

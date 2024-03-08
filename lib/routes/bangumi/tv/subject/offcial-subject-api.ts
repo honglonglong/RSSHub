@@ -1,9 +1,8 @@
-// @ts-nocheck
 import got from '@/utils/got';
 import { parseDate } from '@/utils/parse-date';
-const { getLocalName } = require('./utils');
+import { getLocalName } from './utils';
 
-module.exports = (type) => {
+export default (type) => {
     const mapping = {
         blog: {
             en: 'reviews',

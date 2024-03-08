@@ -1,6 +1,5 @@
-// @ts-nocheck
 import cache from '@/utils/cache';
-const { baseURL, puppeteerGet } = require('./utils');
+import { baseURL, puppeteerGet } from './utils';
 import { load } from 'cheerio';
 
 export default async (ctx) => {

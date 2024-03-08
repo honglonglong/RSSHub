@@ -1,4 +1,3 @@
-// @ts-nocheck
 import cache from '@/utils/cache';
 import { parseDate } from '@/utils/parse-date';
 import got from '@/utils/got';
@@ -58,9 +57,4 @@ const fetchVideo = (ctx, url) =>
         return `<video controls preload="none">${sources.join('\n')}</video>`;
     });
 
-module.exports = {
-    parseJucheDate,
-    fixDesc,
-    fetchPhoto,
-    fetchVideo,
-};
+export { parseJucheDate, fixDesc, fetchPhoto, fetchVideo };

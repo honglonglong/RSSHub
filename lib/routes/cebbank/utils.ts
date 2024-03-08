@@ -1,4 +1,3 @@
-// @ts-nocheck
 const TYPE = {
     usd: {
         name: '美元(USD)',
@@ -66,6 +65,4 @@ const TYPE = {
     },
 };
 
-module.exports = {
-    TYPE,
-};
+export default { TYPE };

@@ -1,8 +1,7 @@
-// @ts-nocheck
 import cache from '@/utils/cache';
 import got from '@/utils/got';
 import { load } from 'cheerio';
-const url = require('url');
+import * as url from 'node:url';
 
 export default async (ctx) => {
     const id = ctx.req.param('id') || -1;

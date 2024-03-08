@@ -1,4 +1,3 @@
-// @ts-nocheck
 import { getCurrentPath } from '@/utils/helpers';
 const __dirname = getCurrentPath(import.meta.url);
 
@@ -61,11 +60,4 @@ const renderPost = ({ id, type_label: type, cast, /** livestream  */ message /**
     }
 };
 
-module.exports = {
-    apiBase,
-    baseUrl,
-    getUserInfo,
-    renderCast,
-    renderLive,
-    renderPost,
-};
+export { apiBase, baseUrl, getUserInfo, renderCast, renderLive, renderPost };

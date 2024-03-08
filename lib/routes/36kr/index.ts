@@ -1,11 +1,10 @@
-// @ts-nocheck
 import { getSubPath } from '@/utils/common-utils';
 import cache from '@/utils/cache';
 import got from '@/utils/got';
 import { load } from 'cheerio';
 import { parseDate } from '@/utils/parse-date';
 
-const { rootUrl, ProcessItem } = require('./utils');
+import { rootUrl, ProcessItem } from './utils';
 
 const shortcuts = {
     '/information': '/information/web_news',

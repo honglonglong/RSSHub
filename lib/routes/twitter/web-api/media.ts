@@ -1,8 +1,7 @@
-// @ts-nocheck
-const utils = require('../utils');
+import utils from '../utils';
 // import { config } from '@/config';
-const { getUser, getUserMedia } = require('./twitter-api');
-const { initToken } = require('./token');
+import { getUser, getUserMedia } from './twitter-api';
+import { initToken } from './token';
 
 export default async (ctx) => {
     const id = ctx.req.param('id');

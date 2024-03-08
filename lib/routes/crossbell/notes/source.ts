@@ -1,6 +1,5 @@
-// @ts-nocheck
 import got from '@/utils/got';
-const { getItem } = require('./utils');
+import { getItem } from './utils';
 
 export default async (ctx) => {
     const source = ctx.req.param('source');

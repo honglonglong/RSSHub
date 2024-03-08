@@ -1,4 +1,3 @@
-// @ts-nocheck
 import got from '@/utils/got';
 import { parseDate } from '@/utils/parse-date';
 
@@ -107,6 +106,4 @@ function parseContent(content) {
     return parseToSimpleText([JSON.parse(content)]);
 }
 
-module.exports = {
-    ProcessFeed,
-};
+export default { ProcessFeed };

@@ -1,9 +1,8 @@
-// @ts-nocheck
 import cache from '@/utils/cache';
 import got from '@/utils/got';
 import { load } from 'cheerio';
 import { parseDate } from '@/utils/parse-date';
-const { getTokenAndSecret } = require('./utils');
+import { getTokenAndSecret } from './utils';
 
 export default async (ctx) => {
     const baseUrl = 'https://qianp.com';

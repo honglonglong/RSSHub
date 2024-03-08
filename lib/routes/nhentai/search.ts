@@ -1,6 +1,5 @@
-// @ts-nocheck
 import cache from '@/utils/cache';
-const { getSimple, getDetails, getTorrents } = require('./util');
+import { getSimple, getDetails, getTorrents } from './util';
 
 export default async (ctx) => {
     const { keyword, mode } = ctx.req.param();

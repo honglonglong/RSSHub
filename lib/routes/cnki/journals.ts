@@ -1,9 +1,8 @@
-// @ts-nocheck
 import cache from '@/utils/cache';
 import got from '@/utils/got';
 import { load } from 'cheerio';
 import { parseDate } from '@/utils/parse-date';
-const { ProcessItem } = require('./utils');
+import { ProcessItem } from './utils';
 
 const rootUrl = 'https://navi.cnki.net';
 

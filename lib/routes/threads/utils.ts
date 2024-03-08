@@ -1,7 +1,6 @@
-// @ts-nocheck
 import got from '@/utils/got';
 import { load } from 'cheerio';
-const dayjs = require('dayjs');
+import dayjs from 'dayjs';
 
 const profileUrl = (user) => `https://www.threads.net/@${user}`;
 const threadUrl = (code) => `https://www.threads.net/t/${code}`;
@@ -132,17 +131,4 @@ const buildContent = (item, options) => {
     return { title, description };
 };
 
-module.exports = {
-    apiUrl,
-    profileUrl,
-    threadUrl,
-    PROFILE_QUERY,
-    THREADS_QUERY,
-    REPLIES_QUERY,
-    USER_AGENT,
-    extractTokens,
-    makeHeader,
-    hasMedia,
-    buildMedia,
-    buildContent,
-};
+export { apiUrl, profileUrl, threadUrl, PROFILE_QUERY, THREADS_QUERY, REPLIES_QUERY, USER_AGENT, extractTokens, makeHeader, hasMedia, buildMedia, buildContent };

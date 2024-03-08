@@ -1,6 +1,5 @@
-// @ts-nocheck
-const { TITLE, HOST } = require('./const');
-const { fetchActivityList, fetchDictionary } = require('./service');
+import { TITLE, HOST } from './const';
+import { fetchActivityList, fetchDictionary } from './service';
 
 export default async (ctx) => {
     const cityCode = Number.parseInt(ctx.req.param('cityCode'));
