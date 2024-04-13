@@ -17,10 +17,9 @@ export const route: Route = {
     name: '周刊 - JavaScript',
     maintainers: ['daijinru', 'hestudy'],
     handler,
-    description: `
-    | javascript | node | react |
-    | ---------- | ---- | ----- |
-    | js         | node | react |`,
+    description: `| javascript | node | react |
+  | ---------- | ---- | ----- |
+  | js         | node | react |`,
     radar: [
         {
             source: ['docschina.org/news/weekly/js/*', 'docschina.org/news/weekly/js', 'docschina.org/'],

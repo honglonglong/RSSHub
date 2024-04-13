@@ -1,5 +1,32 @@
 import type { Context } from 'hono';
 
+// Make sure it's synchronise with scripts/workflow/data.ts
+// and lib/routes/rsshub/routes.ts
+type Category =
+    | 'social-media'
+    | 'new-media'
+    | 'traditional-media'
+    | 'bbs'
+    | 'blog'
+    | 'programming'
+    | 'design'
+    | 'live'
+    | 'multimedia'
+    | 'picture'
+    | 'anime'
+    | 'program-update'
+    | 'university'
+    | 'forecast'
+    | 'travel'
+    | 'shopping'
+    | 'game'
+    | 'reading'
+    | 'government'
+    | 'study'
+    | 'journal'
+    | 'finance'
+    | 'other';
+
 // rss
 export type DataItem = {
     title: string;
@@ -24,6 +51,8 @@ export type DataItem = {
     enclosure_title?: string;
     enclosure_length?: number;
     itunes_duration?: number | string;
+    itunes_item_image?: string;
+    media?: Record<string, Record<string, string>>;
 
     _extra?: Record<string, any> & {
         links?: {
@@ -45,6 +74,13 @@ export type Data = {
     language?: string;
     feedLink?: string;
     lastBuildDate?: string;
+    itunes_author?: string;
+    itunes_category?: string;
+    itunes_explicit?: string | boolean;
+    id?: string;
+
+    atomlink?: string;
+    ttl?: number;
 };
 
 // namespace
@@ -63,7 +99,7 @@ interface NamespaceItem {
     /**
      * The classification of the namespace, which will be written into the corresponding classification document
      */
-    categories?: string[];
+    categories?: Category[];
 
     /**
      * Hints and additional explanations for users using this namespace, it will be inserted into the documentation
@@ -108,7 +144,7 @@ interface RouteItem {
     /**
      * The handler function of the route
      */
-    handler: (ctx?: Context) => Promise<Data> | Data;
+    handler: (ctx: Context) => Promise<Data> | Data;
 
     /**
      * An example URL of the route
@@ -128,7 +164,7 @@ interface RouteItem {
     /**
      * The classification of the route, which will be written into the corresponding classification documentation
      */
-    categories?: string[];
+    categories?: Category[];
 
     /**
      * Special features of the route, such as what configuration items it depends on, whether it is strict anti-crawl, whether it supports a certain function and so on
@@ -212,8 +248,8 @@ export type RadarItem = {
               /** The parameters matched from the `source` field */
               params: any,
               /** The current webpage URL string */
-              url?: string,
+              url: string,
               /** @deprecated Temporary removed  @see https://github.com/DIYgod/RSSHub-Radar/commit/e6079ea1a8c96e89b1b2c2aa6d13c7967788ca3b */
-              document?: Document
+              document: Document
           ) => string);
 };
